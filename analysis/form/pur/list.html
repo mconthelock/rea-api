@@ -1,0 +1,2365 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="web_standard" name="shell-type" />
+		<title>Mitsubishi Elevator Asia Co., Ltd. - AMEC Supplier Portal</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			@layer base {
+				html,
+				body {
+					margin: 0;
+					padding: 0;
+				}
+				body {
+					overscroll-behavior: none;
+				}
+				main > :first-child {
+					margin-top: 0 !important;
+				}
+				main > :last-child {
+					margin-bottom: 0 !important;
+				}
+			}
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: "class",
+				theme: {
+					extend: {
+						colors: {
+							"text-muted": "#666666",
+							"on-primary": "#ffffff",
+							"surface-container-high": "#e9e8e7",
+							"on-secondary-fixed-variant": "#00458e",
+							"secondary-fixed": "#d7e3ff",
+							"surface-tint": "#5f5e5e",
+							"status-pending-text": "#8a5800",
+							"on-tertiary-container": "#ff2925",
+							"status-reject-text": "#c80010",
+							surface: "#ffffff",
+							"on-tertiary-fixed-variant": "#930007",
+							error: "#ba1a1a",
+							"secondary-container": "#5095fe",
+							"tertiary-fixed": "#ffdad5",
+							background: "#fbf9f9",
+							"secondary-fixed-dim": "#aac7ff",
+							"surface-dim": "#dbdad9",
+							"border-light": "#e5e5e5",
+							"status-success-border": "#a3d9a5",
+							primary: "#000000",
+							tertiary: "#000000",
+							"error-container": "#ffdad6",
+							"tertiary-container": "#410001",
+							"on-secondary-container": "#002d61",
+							"on-error": "#ffffff",
+							"primary-fixed": "#e5e2e1",
+							"surface-container-lowest": "#ffffff",
+							"accent-blue-hover": "#004d99",
+							"surface-bright": "#fbf9f9",
+							"status-success-bg": "#edf7ee",
+							"inverse-on-surface": "#f2f0f0",
+							"surface-container-highest": "#e3e2e2",
+							"outline-variant": "#c4c7c7",
+							"surface-variant": "#e3e2e2",
+							"status-pending-border": "#f5c26b",
+							"on-surface": "#1b1c1c",
+							"on-secondary": "#ffffff",
+							outline: "#747878",
+							"border-medium": "#cccccc",
+							secondary: "#005cba",
+							"on-tertiary": "#ffffff",
+							"on-primary-fixed": "#1c1b1b",
+							"on-error-container": "#93000a",
+							"text-body": "#333333",
+							"on-primary-fixed-variant": "#474646",
+							"on-secondary-fixed": "#001b3e",
+							"status-pending-bg": "#fff8e6",
+							"status-reject-bg": "#fdecee",
+							"tertiary-fixed-dim": "#ffb4aa",
+							"inverse-primary": "#c8c6c5",
+							"primary-fixed-dim": "#c8c6c5",
+							"on-background": "#1b1c1c",
+							"surface-container-low": "#f5f3f3",
+							"on-primary-container": "#858383",
+							"surface-subtle": "#fafafa",
+							"status-reject-border": "#f5a3ab",
+							"surface-footer": "#dbdbdb",
+							"primary-container": "#1c1b1b",
+							"status-success-text": "#1b5e20",
+							"surface-container": "#efeded",
+							"accent-red-hover": "#c80010",
+							"inverse-surface": "#303031",
+							"border-dark": "#111111",
+							"on-surface-variant": "#444748",
+							"on-tertiary-fixed": "#410001",
+						},
+						borderRadius: {
+							DEFAULT: "0.25rem",
+							lg: "0.5rem",
+							xl: "0.75rem",
+							full: "9999px",
+						},
+						spacing: {
+							"gutter-sm": "1rem",
+							"space-sm": "0.5rem",
+							gutter: "1.5rem",
+							"space-2xl": "3rem",
+							"space-md": "1rem",
+							margin: "2rem",
+							"space-3xl": "4rem",
+							"space-xl": "2rem",
+							"margin-mobile": "1rem",
+							"space-lg": "1.5rem",
+							"space-xs": "0.25rem",
+						},
+						fontFamily: {
+							"hero-title-mobile": ["Segoe UI"],
+							"data-mono": ["Segoe UI"],
+							"body-sm": ["Segoe UI"],
+							"body-lg": ["Segoe UI"],
+							"hero-title": ["Segoe UI"],
+							h3: ["Segoe UI"],
+							"meta-tag": ["Segoe UI"],
+							"body-md": ["Segoe UI"],
+							caption: ["Segoe UI"],
+							h1: ["Segoe UI"],
+							"h2-mobile": ["Segoe UI"],
+							h2: ["Segoe UI"],
+							"h1-mobile": ["Segoe UI"],
+							"editorial-statement": ["Segoe UI"],
+						},
+						fontSize: {
+							"hero-title-mobile": [
+								"2.25rem",
+								{
+									lineHeight: "1.2",
+									letterSpacing: "-0.01em",
+									fontWeight: "500",
+								},
+							],
+							"data-mono": [
+								"0.875rem",
+								{
+									lineHeight: "1.4",
+									letterSpacing: "0.01em",
+									fontWeight: "600",
+								},
+							],
+							"body-sm": [
+								"0.875rem",
+								{ lineHeight: "1.5", fontWeight: "400" },
+							],
+							"body-lg": [
+								"1.125rem",
+								{ lineHeight: "1.6", fontWeight: "400" },
+							],
+							"hero-title": [
+								"3.5rem",
+								{
+									lineHeight: "1.15",
+									letterSpacing: "-0.015em",
+									fontWeight: "500",
+								},
+							],
+							h3: [
+								"1.5rem",
+								{ lineHeight: "1.3", fontWeight: "600" },
+							],
+							"meta-tag": [
+								"0.8125rem",
+								{
+									lineHeight: "1.2",
+									letterSpacing: "0.02em",
+									fontWeight: "700",
+								},
+							],
+							"body-md": [
+								"1rem",
+								{ lineHeight: "1.6", fontWeight: "400" },
+							],
+							caption: [
+								"0.75rem",
+								{ lineHeight: "1.4", fontWeight: "400" },
+							],
+							h1: [
+								"2.75rem",
+								{
+									lineHeight: "1.2",
+									letterSpacing: "-0.01em",
+									fontWeight: "700",
+								},
+							],
+							"h2-mobile": [
+								"1.5rem",
+								{ lineHeight: "1.3", fontWeight: "600" },
+							],
+							h2: [
+								"2rem",
+								{ lineHeight: "1.25", fontWeight: "600" },
+							],
+							"h1-mobile": [
+								"2rem",
+								{ lineHeight: "1.25", fontWeight: "700" },
+							],
+							"editorial-statement": [
+								"2.25rem",
+								{ lineHeight: "1.35", fontWeight: "400" },
+							],
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-surface font-body-md text-on-surface antialiased">
+		<header
+			class="fixed top-0 left-0 w-full z-50 bg-surface shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+		>
+			<div
+				class="h-[72px] max-w-[1380px] mx-auto px-gutter flex items-center justify-between"
+			>
+				<div class="flex items-center gap-space-md">
+					<div class="flex items-center gap-space-sm">
+						<svg
+							class="flex-shrink-0"
+							fill="none"
+							height="32"
+							viewbox="0 0 120 105"
+							width="36"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<polygon
+								fill="#FF0000"
+								points="60,0 80,35 40,35"
+							></polygon>
+							<polygon
+								fill="#FF0000"
+								points="80,35 120,35 100,70"
+							></polygon>
+							<polygon
+								fill="#FF0000"
+								points="40,35 0,35 20,70"
+							></polygon>
+							<polygon
+								fill="#FF0000"
+								points="60,70 100,70 80,105"
+							></polygon>
+							<polygon
+								fill="#FF0000"
+								points="60,70 20,70 40,105"
+							></polygon>
+						</svg>
+						<div
+							class="flex flex-col justify-center leading-none pl-1"
+						>
+							<span
+								class="font-h3 text-[15px] font-bold tracking-tight text-primary uppercase leading-tight"
+								>MITSUBISHI ELECTRIC</span
+							><span
+								class="font-caption text-[10px] tracking-normal text-text-muted mt-0.5"
+								>Changes for the Better</span
+							>
+						</div>
+					</div>
+					<div class="h-8 w-px bg-border-light mx-space-xs"></div>
+					<div
+						class="font-body-sm text-[13px] font-semibold text-text-body tracking-tight leading-tight"
+					>
+						Mitsubishi Elevator Asia Co., Ltd.
+					</div>
+				</div>
+				<div class="flex items-center gap-space-xl">
+					<nav
+						class="hidden xl:flex items-center gap-space-lg h-[72px]"
+						data-active-classes="text-secondary border-b-2 border-secondary font-bold"
+					>
+						<a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="about"
+							href="#"
+							>About</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="sustainability"
+							href="#"
+							>Sustainability</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="investors"
+							href="#"
+							>Investors</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="careers"
+							href="#"
+							>Careers</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="news"
+							href="#"
+							>News</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="products-and-solutions"
+							href="#"
+							>Products & Solutions</a
+						><a
+							class="h-full inline-flex items-center font-body-sm text-[14px] font-semibold text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="contact"
+							href="#"
+							>Contact</a
+						>
+					</nav>
+					<div
+						class="flex items-center text-text-body font-meta-tag text-[12px] tracking-wider pl-space-md"
+					>
+						<span class="font-bold text-primary cursor-pointer"
+							>EN</span
+						><span class="mx-space-xs text-outline-variant">|</span
+						><span
+							class="text-text-muted hover:text-primary cursor-pointer transition-colors"
+							>TH</span
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="w-full pt-[72px] bg-surface min-h-[calc(100vh-72px)]">
+			<div class="flex flex-col w-full">
+				<!-- Top Utility Context Bar: Breadcrumbs & System Status -->
+				<div
+					class="w-full bg-surface-container-low border-b border-border-light"
+				>
+					<div
+						class="max-w-[1380px] mx-auto px-gutter py-2 flex flex-wrap items-center justify-between gap-y-2 text-text-muted"
+					>
+						<nav
+							class="flex items-center gap-space-xs font-caption text-caption tracking-tight"
+						>
+							<a
+								class="hover:text-secondary flex items-center gap-1 transition-colors"
+								data-path="home"
+								href="#"
+							>
+								<span
+									class="material-symbols-outlined text-[15px]"
+									>home</span
+								>
+								<span>Home</span>
+							</a>
+							<span class="text-outline-variant">/</span>
+							<a
+								class="hover:text-secondary transition-colors"
+								data-path="supplier-portal"
+								href="#"
+								>Supplier Portal</a
+							>
+							<span class="text-outline-variant">/</span>
+							<span class="text-on-surface-variant font-medium"
+								>Master Data & Directory</span
+							>
+							<span class="text-outline-variant">/</span>
+							<span class="text-primary font-semibold"
+								>Vendor Directory (ทะเบียนรายชื่อคู่ค้า)</span
+							>
+						</nav>
+						<div
+							class="flex items-center gap-4 font-meta-tag text-caption uppercase text-text-muted"
+						>
+							<span class="inline-flex items-center gap-1.5">
+								<span
+									class="w-2 h-2 rounded-full bg-status-success-text"
+								></span>
+								<span>SAP S/4HANA Master Link: Live</span>
+							</span>
+							<span class="text-outline-variant">|</span>
+							<span class="font-data-mono text-caption"
+								>Rev: 2025.03-REL.4</span
+							>
+						</div>
+					</div>
+				</div>
+				<!-- Main Work Area -->
+				<div
+					class="w-full max-w-[1380px] mx-auto px-gutter py-6 flex flex-col gap-6"
+				>
+					<!-- Header & Action Dock -->
+					<div
+						class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 border-b-2 border-border-dark pb-5"
+					>
+						<div class="flex flex-col gap-1.5">
+							<div class="flex items-center gap-2">
+								<span
+									class="w-2 h-4 bg-[#FF0000] inline-block"
+								></span>
+								<span
+									class="font-meta-tag text-meta-tag tracking-wider text-text-muted uppercase"
+									>AMEC PROCUREMENT MASTER REGISTRY // TIER-1
+									& TIER-2 PARTNERS</span
+								>
+							</div>
+							<h1
+								class="font-h1 text-h1 text-primary tracking-tight font-bold"
+							>
+								Vendor Directory
+								<span
+									class="font-h2 text-h2 text-text-muted font-normal tracking-normal"
+									>(ทะเบียนรายชื่อคู่ค้าทั้งหมด)</span
+								>
+							</h1>
+							<p
+								class="font-body-sm text-body-sm text-text-body max-w-4xl"
+							>
+								Official registry of approved tier-1
+								manufacturing fabricators, electrical component
+								suppliers, precision casting specialists, and
+								logistics partners for AMEC Chonburi Works.
+								Governed by Japanese industrial safety and
+								ISO/J-SOX quality mandates.
+							</p>
+						</div>
+						<!-- Action Buttons -->
+						<div
+							class="flex flex-wrap items-center gap-2 pt-2 lg:pt-0"
+						>
+							<button
+								class="inline-flex items-center gap-1.5 bg-surface text-text-body border border-border-medium hover:bg-surface-container-low px-3.5 py-2 rounded-[2px] font-body-sm text-caption font-semibold transition-colors shadow-sm"
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[17px] text-text-muted"
+									>download</span
+								>
+								<span>Download Approved List (.PDF)</span>
+							</button>
+							<button
+								class="inline-flex items-center gap-1.5 bg-surface text-text-body border border-border-medium hover:bg-surface-container-low px-3.5 py-2 rounded-[2px] font-body-sm text-caption font-semibold transition-colors shadow-sm"
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[17px] text-text-muted"
+									>table_view</span
+								>
+								<span>Export Ledger (.CSV)</span>
+							</button>
+							<button
+								class="inline-flex items-center gap-1.5 bg-secondary hover:bg-accent-blue-hover text-on-secondary px-4 py-2 rounded-[2px] font-body-sm text-caption font-semibold transition-colors shadow-sm"
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[18px]"
+									>person_add</span
+								>
+								<span>+ Register New Vendor</span>
+							</button>
+						</div>
+					</div>
+					<!-- KPI Metric Blocks (4 Cards with Industrial Precision) -->
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
+					>
+						<!-- KPI 1 -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+						>
+							<div class="flex items-center justify-between">
+								<span
+									class="font-meta-tag text-caption uppercase text-text-muted tracking-wide"
+									>Total Active Vendors</span
+								>
+								<span
+									class="material-symbols-outlined text-secondary text-[20px]"
+									>corporate_fare</span
+								>
+							</div>
+							<div class="mt-2 flex items-baseline gap-2">
+								<span
+									class="font-h1 text-h2 font-bold text-primary tracking-tight"
+									>148</span
+								>
+								<span
+									class="font-body-sm text-caption text-text-muted"
+									>Entities</span
+								>
+							</div>
+							<div
+								class="mt-2 pt-2 border-t border-border-light flex items-center justify-between text-caption font-body-sm text-text-body"
+							>
+								<span
+									>Tier-1:
+									<strong class="text-primary font-semibold"
+										>62</strong
+									></span
+								>
+								<span class="text-outline-variant">|</span>
+								<span
+									>Tier-2:
+									<strong class="text-primary font-semibold"
+										>86</strong
+									></span
+								>
+								<span
+									class="text-status-success-text text-[11px] font-semibold bg-status-success-bg px-1 py-0.5 border border-status-success-border"
+									>100% Active</span
+								>
+							</div>
+						</div>
+						<!-- KPI 2 -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+						>
+							<div class="flex items-center justify-between">
+								<span
+									class="font-meta-tag text-caption uppercase text-text-muted tracking-wide"
+									>Quality Grade A Certified</span
+								>
+								<span
+									class="material-symbols-outlined text-status-success-text text-[20px]"
+									>verified</span
+								>
+							</div>
+							<div class="mt-2 flex items-baseline gap-2">
+								<span
+									class="font-h1 text-h2 font-bold text-primary tracking-tight"
+									>89.2%</span
+								>
+								<span
+									class="font-body-sm text-caption text-text-muted"
+									>(132 Vendors)</span
+								>
+							</div>
+							<div
+								class="mt-2 pt-2 border-t border-border-light flex items-center justify-between text-caption font-body-sm text-text-body"
+							>
+								<span class="text-text-muted"
+									>Zero Fatal PPM:
+									<strong class="text-primary font-semibold"
+										>124</strong
+									></span
+								>
+								<span
+									class="text-status-success-text text-[11px] font-semibold"
+									>+1.8% QoQ</span
+								>
+							</div>
+						</div>
+						<!-- KPI 3 -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+						>
+							<div class="flex items-center justify-between">
+								<span
+									class="font-meta-tag text-caption uppercase text-text-muted tracking-wide"
+									>J-SOX & ISO Compliance</span
+								>
+								<span
+									class="material-symbols-outlined text-secondary text-[20px]"
+									>policy</span
+								>
+							</div>
+							<div class="mt-2 flex items-baseline gap-2">
+								<span
+									class="font-h1 text-h2 font-bold text-primary tracking-tight"
+									>100%</span
+								>
+								<span
+									class="font-body-sm text-caption text-status-success-text font-semibold"
+									>Audit Compliant</span
+								>
+							</div>
+							<div
+								class="mt-2 pt-2 border-t border-border-light flex items-center justify-between text-caption font-body-sm text-text-body"
+							>
+								<span class="text-text-muted"
+									>ISO 9001 / ISO 14001</span
+								>
+								<span
+									class="font-data-mono text-[11px] text-text-muted"
+									>FY2024 Passed</span
+								>
+							</div>
+						</div>
+						<!-- KPI 4 -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+						>
+							<div class="flex items-center justify-between">
+								<span
+									class="font-meta-tag text-caption uppercase text-text-muted tracking-wide"
+									>Under Review / Action</span
+								>
+								<span
+									class="material-symbols-outlined text-status-pending-text text-[20px]"
+									>warning</span
+								>
+							</div>
+							<div class="mt-2 flex items-baseline gap-2">
+								<span
+									class="font-h1 text-h2 font-bold text-status-pending-text tracking-tight"
+									>4</span
+								>
+								<span
+									class="font-body-sm text-caption text-text-muted"
+									>Audits in Progress</span
+								>
+							</div>
+							<div
+								class="mt-2 pt-2 border-t border-border-light flex items-center justify-between text-caption font-body-sm text-text-body"
+							>
+								<span class="text-text-muted"
+									>1 Remediation Claim</span
+								>
+								<span
+									class="text-status-pending-text text-[11px] font-semibold bg-status-pending-bg px-1 py-0.5 border border-status-pending-border"
+									>Action Req.</span
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Search, Categorization & Filter Toolbar -->
+					<div
+						class="bg-surface-subtle border border-border-light p-4 flex flex-col gap-3"
+					>
+						<!-- Search Line -->
+						<div
+							class="flex flex-col md:flex-row items-stretch gap-2"
+						>
+							<div class="relative flex-1">
+								<span
+									class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]"
+									>search</span
+								>
+								<input
+									class="w-full bg-surface border border-border-medium rounded-none pl-9 pr-3 py-2 text-body-sm text-text-body placeholder:text-text-muted focus:border-secondary focus:outline-none"
+									id="vendorSearchInput"
+									placeholder="Search by Vendor Name, Vendor Code (e.g. V-884029-TH, 80018), Tax ID, or Commodity..."
+									type="text"
+								/>
+							</div>
+							<button
+								class="bg-primary hover:bg-neutral-800 text-on-primary px-5 py-2 rounded-none font-body-sm text-caption font-semibold flex items-center justify-center gap-1.5 transition-colors"
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[16px]"
+									>filter_alt</span
+								>
+								<span>Apply Query</span>
+							</button>
+							<button
+								class="bg-surface hover:bg-surface-container-low text-text-body border border-border-medium px-3.5 py-2 rounded-none font-body-sm text-caption font-medium transition-colors"
+								onclick="
+									document.getElementById(
+										'vendorSearchInput',
+									).value = ''
+								"
+								type="button"
+							>
+								<span>Reset Filters</span>
+							</button>
+						</div>
+						<!-- Filter Dropdowns Row -->
+						<div
+							class="grid grid-cols-2 md:grid-cols-4 gap-2 pt-2 border-t border-border-light"
+						>
+							<div class="flex flex-col gap-1">
+								<label
+									class="font-meta-tag text-[11px] uppercase text-text-muted tracking-wider"
+									>Tier Level</label
+								>
+								<select
+									class="bg-surface border border-border-medium rounded-none px-2.5 py-1.5 text-body-sm text-text-body text-caption focus:border-secondary focus:outline-none"
+								>
+									<option>All Tiers (Tier-1 & Tier-2)</option>
+									<option>Tier-1 Direct AMEC Partner</option>
+									<option>
+										Tier-2 Subcontractor Fabricator
+									</option>
+									<option>Tier-1 Global Import Hub</option>
+								</select>
+							</div>
+							<div class="flex flex-col gap-1">
+								<label
+									class="font-meta-tag text-[11px] uppercase text-text-muted tracking-wider"
+									>Commodity Category</label
+								>
+								<select
+									class="bg-surface border border-border-medium rounded-none px-2.5 py-1.5 text-body-sm text-text-body text-caption focus:border-secondary focus:outline-none"
+								>
+									<option>All Commodities</option>
+									<option>
+										Sheet Metal & Hoistway Structure
+									</option>
+									<option>
+										Electrical Panels & Control Harness
+									</option>
+									<option>
+										Traction Machine & Sheave Casting
+									</option>
+									<option>
+										Fasteners, Binder & Mounting Clips
+									</option>
+									<option>
+										Elevator Door Mechanism & Sills
+									</option>
+									<option>
+										Surface Treatment & Powder Coating
+									</option>
+								</select>
+							</div>
+							<div class="flex flex-col gap-1">
+								<label
+									class="font-meta-tag text-[11px] uppercase text-text-muted tracking-wider"
+									>Quality Grade</label
+								>
+								<select
+									class="bg-surface border border-border-medium rounded-none px-2.5 py-1.5 text-body-sm text-text-body text-caption focus:border-secondary focus:outline-none"
+								>
+									<option>All Grades</option>
+									<option>
+										Grade A Certified (Exemplary)
+									</option>
+									<option>
+										Grade B Qualified (Compliant)
+									</option>
+									<option>
+										Grade B+ (In Corrective Remediation)
+									</option>
+									<option>Grade C / Under Probation</option>
+								</select>
+							</div>
+							<div class="flex flex-col gap-1">
+								<label
+									class="font-meta-tag text-[11px] uppercase text-text-muted tracking-wider"
+									>Operational Location</label
+								>
+								<select
+									class="bg-surface border border-border-medium rounded-none px-2.5 py-1.5 text-body-sm text-text-body text-caption focus:border-secondary focus:outline-none"
+								>
+									<option>All Locations / Estates</option>
+									<option>
+										Amata City Chonburi (Zone 1)
+									</option>
+									<option>
+										WHA Chonburi / Eastern Seaboard
+									</option>
+									<option>Amata City Rayong</option>
+									<option>
+										Samut Prakan / BKK Industrial
+									</option>
+									<option>
+										Overseas (Japan / Singapore)
+									</option>
+								</select>
+							</div>
+						</div>
+						<!-- Result Count & Quick Filter Badges -->
+						<div
+							class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-border-light text-caption"
+						>
+							<div class="flex items-center gap-2">
+								<span
+									class="font-meta-tag text-text-muted uppercase text-[11px]"
+									>Active View:</span
+								>
+								<span
+									class="font-data-mono font-semibold text-primary"
+									>Showing 1 - 8 of 148 Registered
+									Vendors</span
+								>
+							</div>
+							<div class="flex items-center gap-2">
+								<span class="text-text-muted text-[11px]"
+									>Quick Views:</span
+								>
+								<button
+									class="bg-surface border border-border-medium text-text-body px-2 py-0.5 text-[11px] hover:border-secondary"
+									type="button"
+								>
+									Chonburi Plant Direct
+								</button>
+								<button
+									class="bg-surface border border-border-medium text-text-body px-2 py-0.5 text-[11px] hover:border-secondary"
+									type="button"
+								>
+									Audit Due < 30 Days
+								</button>
+								<button
+									class="bg-surface border border-border-medium text-text-body px-2 py-0.5 text-[11px] hover:border-secondary"
+									type="button"
+								>
+									Top 10 Volume Fabricators
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Enterprise Vendor Table (Sharp 0px, Heavy Data Density) -->
+					<div
+						class="w-full bg-surface border border-border-light overflow-x-auto shadow-sm"
+					>
+						<table
+							class="w-full text-left border-collapse min-w-[1240px]"
+						>
+							<thead>
+								<tr
+									class="bg-surface-subtle border-b-2 border-border-dark font-meta-tag text-[11px] uppercase tracking-wider text-text-body"
+								>
+									<th class="py-3 px-3.5 w-32">
+										Vendor Code
+									</th>
+									<th class="py-3 px-3.5">
+										Corporate Entity Name & Commodity
+									</th>
+									<th class="py-3 px-3 w-44">
+										Tier & Quality
+									</th>
+									<th class="py-3 px-3 w-48">
+										Location / Plant
+									</th>
+									<th class="py-3 px-3 w-52">
+										Liaison Contact
+									</th>
+									<th class="py-3 px-3 w-44">AMEC Buyer</th>
+									<th class="py-3 px-3 w-44 text-right">
+										OTD & PPM
+									</th>
+									<th class="py-3 px-3 w-36 text-center">
+										Status
+									</th>
+									<th class="py-3 px-3.5 w-36 text-right">
+										Actions
+									</th>
+								</tr>
+							</thead>
+							<tbody
+								class="divide-y divide-border-light font-body-sm text-[13px] text-text-body"
+							>
+								<!-- Vendor 1: Siam Precision -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-884029-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 104882</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Siam Precision Engineering Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท สยาม พรีซิชั่น เอ็นจิเนียริ่ง
+											จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>precision_manufacturing</span
+											>
+											<span
+												>Elevator Hoistway & Structural
+												Sheet Metal</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 DIRECT</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Amata City Chonburi
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Plant 2, Phase 4 (Chonburi)
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Mr. Kittisak Promdee
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											kitti@siamprecision.co.th
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-450-891
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											S. Narongrit
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 4 (Structural)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											99.4% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.02% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (14)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 2: Chokchai Engineering -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-80018-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>Code: 80018</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Chokchai Engineering Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท โชคชัย เอ็นจิเนียริ่ง จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>crop_square</span
+											>
+											<span
+												>Face Plates, Brackets & Stamped
+												Press Parts</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 DIRECT</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											WHA Chonburi 1
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Bo-win, Sriracha
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Ms. Voranuch Ch.
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											voranuch@chokchai-eng.com
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-345-210
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											P. Sukcharoen
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 2 (Press/Stamping)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											98.7% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.05% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (8)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 3: H.T. Sahakij (Action Needed / Remediation) -->
+								<tr
+									class="hover:bg-[#fff9f9] transition-colors bg-[#fffdfb]"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-status-pending-text block"
+											>V-422605-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 102441</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											H.T. Sahakij Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท เอช.ที. สหกิจ จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-text-muted"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>handyman</span
+											>
+											<span
+												>Binder, Mounting Clips &
+												Special Fasteners</span
+											>
+										</div>
+										<div
+											class="mt-1 inline-flex items-center gap-1 text-[11px] text-status-reject-text bg-status-reject-bg px-1.5 py-0.5 border border-status-reject-border"
+										>
+											<span
+												class="material-symbols-outlined text-[12px]"
+												>report</span
+											>
+											<span
+												>Thai Claim Slip Active (Batch
+												CLM-2025-081)</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-surface-container-highest text-text-body text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-2 SUB</span
+											>
+											<span
+												class="inline-block bg-status-pending-bg text-status-pending-text border border-status-pending-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE B+ (REMEDIAL)</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Samut Prakan
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Bang Phli Industrial Est.
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Mr. Somchai Tang
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											somchai@ht-sahakij.co.th
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 2-705-1990
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											W. Teerayut
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 1 (Fasteners)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-pending-text"
+										>
+											92.1% OTD
+										</div>
+										<div
+											class="text-[11px] text-status-reject-text font-semibold"
+										>
+											Defect: 0.88% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-pending-bg text-status-pending-text border border-status-pending-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Audit Pending</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<button
+												class="text-[11px] font-bold text-status-reject-text hover:underline"
+												type="button"
+											>
+												Issue CAR / Notice
+											</button>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 4: Mitsubishi Electric Trading Corp -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-10003-JP</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>Code: 10003 (MT-S)</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Mitsubishi Electric Trading
+											Corporation (MT-S)
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท มิตซูบิชิ อิเล็คทริค เทรดดิ้ง
+											คอร์ปอเรชั่น
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>cable</span
+											>
+											<span
+												>Intercom Cables, Sensors &
+												Integrated Harness
+												Assemblies</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-secondary text-on-secondary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 GLOBAL HUB</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Tokyo / Singapore
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Global Sourcing Hub (APAC)
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											K. Takahashi (高橋)
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											takahashi.k@mitsubishielectric.com
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+81 3-3218-2111
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											K. Apinya
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Global Electronics
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											99.9% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.00% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (42)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 5: Thai Sumitomo Electric -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-550124-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 109280</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Thai Sumitomo Electric Wiring
+											Systems Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท ไทย ซูมิโตโม อิเล็คทริค
+											ไวร์ริ่ง ซิสเต็มส์ จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>alt_route</span
+											>
+											<span
+												>Wire Harness, Hoistway Sensors
+												& Safety Circuit Looms</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 DIRECT</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Amata City Rayong
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Zone 2 (Rayong Plant)
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Mr. Prasert Sakul
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											p-sakul@sews.co.th
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-892-400
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											K. Apinya
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 3 (Electrical)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											99.1% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.01% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (19)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 6: Eastern Precision Casting -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-671044-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 103980</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Eastern Precision Casting Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท อีสเทิร์น พรีซิชั่น แคสติ้ง
+											จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>donut_large</span
+											>
+											<span
+												>Traction Sheave Castings &
+												Counterweight Blocks</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 DIRECT</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											WHA Eastern Seaboard 2
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Chonburi High-Temp Foundry
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Mr. Boonmee Inthira
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											boonmee@epc-casting.co.th
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-955-112
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											S. Narongrit
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 4 (Foundry/Heavy)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											98.9% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.04% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (7)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 7: Nippon Sanso Gas & Metal -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-399102-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 107412</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Nippon Sanso Gas & Metal Co.
+											(Thailand)
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท นิปปอน ซันโซ แก๊ส แอนด์ เมทัล
+											(ประเทศไทย) จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>view_column</span
+											>
+											<span
+												>Precision Laser Cutting &
+												Structural Tubular
+												Profiles</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-1 DIRECT</span
+											>
+											<span
+												class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE A CERTIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Amata City Chonburi
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Phase 7 (Laser Division)
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Mr. Kenji Sudo (工藤)
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											kudo.k@nipponsanso.co.th
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-214-700
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											P. Sukcharoen
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 2 (Machining)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div
+											class="font-bold text-status-success-text"
+										>
+											99.8% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.00% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-success-bg text-status-success-text border border-status-success-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Active</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (26)</a
+											>
+										</div>
+									</td>
+								</tr>
+								<!-- Vendor 8: Rayong Stamping & Tooling -->
+								<tr
+									class="hover:bg-[#f0f6ff] transition-colors"
+								>
+									<td class="py-3 px-3.5 align-top">
+										<span
+											class="font-data-mono font-bold text-primary block"
+											>V-718290-TH</span
+										>
+										<span
+											class="font-caption text-[11px] text-text-muted"
+											>SAP: 101899</span
+										>
+									</td>
+									<td class="py-3 px-3.5 align-top">
+										<div class="font-semibold text-primary">
+											Rayong Stamping & Tooling Co., Ltd.
+										</div>
+										<div
+											class="text-[12px] text-text-muted"
+										>
+											บริษัท ระยอง สแตมป์ปิ้ง แอนด์
+											ทูลลิ่ง จำกัด
+										</div>
+										<div
+											class="inline-flex items-center gap-1 mt-1 text-[11px] font-medium text-secondary"
+										>
+											<span
+												class="material-symbols-outlined text-[13px]"
+												>sensor_door</span
+											>
+											<span
+												>Door Header & Landing Sill
+												Guide Plates</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="flex flex-col gap-1">
+											<span
+												class="inline-block bg-surface-container-highest text-text-body text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>TIER-2 SUB</span
+											>
+											<span
+												class="inline-block bg-surface-container text-text-body border border-border-medium text-[10px] font-bold px-1.5 py-0.5 w-fit"
+												>GRADE B QUALIFIED</span
+											>
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Map Ta Phut, Rayong
+										</div>
+										<div
+											class="text-caption text-text-muted"
+										>
+											Industrial Estate Zone C
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-medium text-primary">
+											Ms. Piyaporn S.
+										</div>
+										<div
+											class="font-data-mono text-[11px] text-text-muted"
+										>
+											piyaporn@rst-rayong.com
+										</div>
+										<div
+											class="font-caption text-[11px] text-text-muted"
+										>
+											+66 38-684-901
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top">
+										<div class="font-semibold text-primary">
+											P. Sukcharoen
+										</div>
+										<div
+											class="font-caption text-text-muted"
+										>
+											Dept 2 (Door Systems)
+										</div>
+									</td>
+									<td
+										class="py-3 px-3 align-top text-right font-data-mono"
+									>
+										<div class="font-bold text-text-body">
+											97.4% OTD
+										</div>
+										<div
+											class="text-[11px] text-text-muted"
+										>
+											Defect: 0.12% PPM
+										</div>
+									</td>
+									<td class="py-3 px-3 align-top text-center">
+										<span
+											class="inline-block bg-status-pending-bg text-status-pending-text border border-status-pending-border font-meta-tag text-[10px] uppercase px-2 py-0.5"
+											>Re-cert Due</span
+										>
+									</td>
+									<td
+										class="py-3 px-3.5 align-top text-right"
+									>
+										<div
+											class="flex flex-col items-end gap-1"
+										>
+											<button
+												class="text-secondary hover:text-accent-blue-hover font-semibold text-[12px] inline-flex items-center gap-0.5"
+												type="button"
+											>
+												<span>View Profile</span>
+												<span
+													class="material-symbols-outlined text-[14px]"
+													>arrow_forward</span
+												>
+											</button>
+											<a
+												class="text-[11px] text-text-muted hover:text-primary"
+												href="#"
+												>View Open POs (5)</a
+											>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- Pagination & Governance Master Statement -->
+					<div
+						class="flex flex-col sm:flex-row items-center justify-between gap-4 py-2"
+					>
+						<!-- Compliance Footnote -->
+						<div
+							class="flex items-center gap-2 text-text-muted font-caption text-caption max-w-xl"
+						>
+							<span
+								class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0"
+								>gavel</span
+							>
+							<span>
+								All listed vendors are governed under AMEC
+								Master Procurement Agreement (MPA) and ISO
+								9001:2015 / ISO 14001 certified procurement
+								governance. Direct inquiries to Procurement
+								Dept. Chonburi Plant.
+							</span>
+						</div>
+						<!-- Pagination Controls (Sharp Industrial Style) -->
+						<div
+							class="flex items-center gap-1 font-data-mono text-caption"
+						>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-surface border border-border-medium text-text-muted hover:bg-surface-container-low transition-colors"
+								disabled=""
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[16px]"
+									>chevron_left</span
+								>
+							</button>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-primary text-on-primary font-bold"
+								type="button"
+							>
+								1
+							</button>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-surface border border-border-medium text-text-body hover:bg-surface-container-low transition-colors"
+								type="button"
+							>
+								2
+							</button>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-surface border border-border-medium text-text-body hover:bg-surface-container-low transition-colors"
+								type="button"
+							>
+								3
+							</button>
+							<span class="px-1 text-text-muted font-bold"
+								>...</span
+							>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-surface border border-border-medium text-text-body hover:bg-surface-container-low transition-colors"
+								type="button"
+							>
+								15
+							</button>
+							<button
+								class="w-8 h-8 flex items-center justify-center bg-surface border border-border-medium text-text-body hover:bg-surface-container-low transition-colors"
+								type="button"
+							>
+								<span
+									class="material-symbols-outlined text-[16px]"
+									>chevron_right</span
+								>
+							</button>
+						</div>
+					</div>
+					<!-- Fast Access Quick Panels (Two Cards Mosaic) -->
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2">
+						<!-- Panel 1: Fast Procurement Audit Feed -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between"
+						>
+							<div>
+								<div
+									class="flex items-center justify-between border-b border-border-light pb-2 mb-3"
+								>
+									<span
+										class="font-meta-tag text-caption uppercase tracking-wider text-text-muted"
+										>Upcoming On-Site AMEC Audits</span
+									>
+									<span
+										class="font-caption text-caption text-secondary font-semibold"
+										>Q1/2025 Schedule</span
+									>
+								</div>
+								<div
+									class="flex flex-col gap-2 font-body-sm text-[12px]"
+								>
+									<div
+										class="flex items-center justify-between p-2 bg-surface-subtle border-l-2 border-primary"
+									>
+										<div>
+											<span class="font-bold text-primary"
+												>Rayong Stamping & Tooling</span
+											>
+											<span class="text-text-muted ml-2"
+												>(Door Guide Quality
+												Audit)</span
+											>
+										</div>
+										<span
+											class="font-data-mono text-text-muted"
+											>18 Mar 2025</span
+										>
+									</div>
+									<div
+										class="flex items-center justify-between p-2 bg-surface-subtle border-l-2 border-status-pending-border"
+									>
+										<div>
+											<span class="font-bold text-primary"
+												>H.T. Sahakij Co., Ltd.</span
+											>
+											<span class="text-text-muted ml-2"
+												>(Fastener Tensile Strength
+												Verification)</span
+											>
+										</div>
+										<span
+											class="font-data-mono text-status-pending-text font-bold"
+											>22 Mar 2025</span
+										>
+									</div>
+									<div
+										class="flex items-center justify-between p-2 bg-surface-subtle border-l-2 border-secondary"
+									>
+										<div>
+											<span class="font-bold text-primary"
+												>Siam Precision
+												Engineering</span
+											>
+											<span class="text-text-muted ml-2"
+												>(Green Procurement Annual
+												Review)</span
+											>
+										</div>
+										<span
+											class="font-data-mono text-text-muted"
+											>05 Apr 2025</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="pt-3 mt-2 border-t border-border-light flex justify-between items-center text-caption"
+							>
+								<span class="text-text-muted"
+									>Lead Auditor: QA-AMEC Division 3</span
+								>
+								<a
+									class="text-secondary font-semibold hover:underline"
+									href="#"
+									>View Full Audit Calendar →</a
+								>
+							</div>
+						</div>
+						<!-- Panel 2: Vendor Document Repositories & Specs -->
+						<div
+							class="bg-surface border border-border-light p-4 flex flex-col justify-between"
+						>
+							<div>
+								<div
+									class="flex items-center justify-between border-b border-border-light pb-2 mb-3"
+								>
+									<span
+										class="font-meta-tag text-caption uppercase tracking-wider text-text-muted"
+										>AMEC Standard Procurement
+										Guidelines</span
+									>
+									<span
+										class="font-caption text-caption text-text-muted"
+										>Mandatory Standards</span
+									>
+								</div>
+								<div
+									class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[12px] font-body-sm"
+								>
+									<div
+										class="border border-border-light p-2.5 flex items-start gap-2 bg-surface-subtle"
+									>
+										<span
+											class="material-symbols-outlined text-secondary text-[20px]"
+											>description</span
+										>
+										<div>
+											<div
+												class="font-semibold text-primary"
+											>
+												AMEC-STD-004-REV7
+											</div>
+											<div
+												class="text-caption text-text-muted"
+											>
+												Sheet Metal Finishing &
+												Tolerance
+											</div>
+											<a
+												class="text-secondary text-[11px] font-semibold hover:underline mt-1 inline-block"
+												href="#"
+												>Download Specification</a
+											>
+										</div>
+									</div>
+									<div
+										class="border border-border-light p-2.5 flex items-start gap-2 bg-surface-subtle"
+									>
+										<span
+											class="material-symbols-outlined text-secondary text-[20px]"
+											>verified_user</span
+										>
+										<div>
+											<div
+												class="font-semibold text-primary"
+											>
+												AMEC Green Standard v4
+											</div>
+											<div
+												class="text-caption text-text-muted"
+											>
+												RoHS / REACH Hazardous
+												Substances
+											</div>
+											<a
+												class="text-secondary text-[11px] font-semibold hover:underline mt-1 inline-block"
+												href="#"
+												>Download Guidelines</a
+											>
+										</div>
+									</div>
+									<div
+										class="border border-border-light p-2.5 flex items-start gap-2 bg-surface-subtle"
+									>
+										<span
+											class="material-symbols-outlined text-secondary text-[20px]"
+											>fact_check</span
+										>
+										<div>
+											<div
+												class="font-semibold text-primary"
+											>
+												Thai Claim Form Slip (บข-01)
+											</div>
+											<div
+												class="text-caption text-text-muted"
+											>
+												Defect Dispute & Remediation
+												Form
+											</div>
+											<a
+												class="text-secondary text-[11px] font-semibold hover:underline mt-1 inline-block"
+												href="#"
+												>Download Blank Template</a
+											>
+										</div>
+									</div>
+									<div
+										class="border border-border-light p-2.5 flex items-start gap-2 bg-surface-subtle"
+									>
+										<span
+											class="material-symbols-outlined text-secondary text-[20px]"
+											>local_shipping</span
+										>
+										<div>
+											<div
+												class="font-semibold text-primary"
+											>
+												ASN Logistics Protocol
+											</div>
+											<div
+												class="text-caption text-text-muted"
+											>
+												Chonburi Plant Gate 3 Delivery
+												Guide
+											</div>
+											<a
+												class="text-secondary text-[11px] font-semibold hover:underline mt-1 inline-block"
+												href="#"
+												>View Unloading Protocols</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="pt-3 mt-2 border-t border-border-light flex justify-between items-center text-caption"
+							>
+								<span class="text-text-muted"
+									>Last Updated: 15 Feb 2025</span
+								>
+								<a
+									class="text-secondary font-semibold hover:underline"
+									href="#"
+									>Access Full Documentation Vault →</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="w-full bg-[#dbdbdb] text-text-body">
+			<div class="max-w-[1440px] mx-auto px-gutter py-space-2xl">
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-border-medium"
+				>
+					<div class="flex flex-col gap-space-sm">
+						<h3
+							class="font-meta-tag text-[12px] uppercase tracking-wider text-primary font-bold mb-space-xs"
+						>
+							Global Procurement
+						</h3>
+						<a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="po-management"
+							href="#"
+							>Purchase Orders & Delivery</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="thai-claim-slips"
+							href="#"
+							>Thai Claim Slips (ใบรับเคลม)</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="rfq-quotations"
+							href="#"
+							>e-RFQ & Commercial Bids</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="parts-catalog"
+							href="#"
+							>AMEC Elevator Components</a
+						>
+					</div>
+					<div class="flex flex-col gap-space-sm">
+						<h3
+							class="font-meta-tag text-[12px] uppercase tracking-wider text-primary font-bold mb-space-xs"
+						>
+							Operational Channels
+						</h3>
+						<a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="cad-drawing-vault"
+							href="#"
+							>CAD Repository & Revisions</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="asn-shipping-notice"
+							href="#"
+							>Advance Shipping Notice (ASN)</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="quality-assurance"
+							href="#"
+							>QA Inspection Records</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="invoicing-settlement"
+							href="#"
+							>Billing & Tax Invoices</a
+						>
+					</div>
+					<div class="flex flex-col gap-space-sm">
+						<h3
+							class="font-meta-tag text-[12px] uppercase tracking-wider text-primary font-bold mb-space-xs"
+						>
+							Procurement Standards
+						</h3>
+						<a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="supplier-code-of-conduct"
+							href="#"
+							>Supplier Code of Conduct</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="green-procurement"
+							href="#"
+							>Green Procurement Standard</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="iso-compliance"
+							href="#"
+							>ISO 9001 / ISO 14001 AMEC</a
+						><a
+							class="font-body-sm text-[13px] text-text-body hover:text-secondary transition-colors"
+							data-path="safety-security"
+							href="#"
+							>Supply Chain Risk Policy</a
+						>
+					</div>
+					<div class="flex flex-col gap-space-sm">
+						<h3
+							class="font-meta-tag text-[12px] uppercase tracking-wider text-primary font-bold mb-space-xs"
+						>
+							Helpdesk & Support
+						</h3>
+						<p
+							class="font-body-sm text-[13px] text-text-muted leading-relaxed mb-space-xs"
+						>
+							AMEC Procurement Division, Chonburi Plant, Amata
+							City Chonburi Industrial Estate.
+						</p>
+						<div
+							class="font-data-mono text-[12px] text-text-body font-semibold"
+						>
+							TEL: +66 (0) 3893-6900
+						</div>
+						<div class="font-data-mono text-[12px] text-text-body">
+							support-amec@meap.com
+						</div>
+						<div class="mt-space-xs">
+							<a
+								class="inline-block bg-primary text-on-primary font-meta-tag text-[11px] px-space-md py-space-xs hover:bg-neutral-800 transition-colors uppercase"
+								data-path="contact"
+								href="#"
+								>Submit Ticket</a
+							>
+						</div>
+					</div>
+				</div>
+				<div
+					class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"
+				>
+					<div class="font-caption text-[12px] text-text-muted">
+						© Mitsubishi Electric Corporation. All Rights Reserved.
+					</div>
+					<div class="flex flex-wrap items-center gap-space-lg">
+						<a
+							class="font-caption text-[12px] text-text-body hover:text-secondary transition-colors"
+							data-path="privacy-policy"
+							href="#"
+							>Privacy Policy</a
+						><span class="text-outline-variant text-[11px]">|</span
+						><a
+							class="font-caption text-[12px] text-text-body hover:text-secondary transition-colors"
+							data-path="terms-of-use"
+							href="#"
+							>Terms of Use</a
+						><span class="text-outline-variant text-[11px]">|</span
+						><a
+							class="font-caption text-[12px] text-text-body hover:text-secondary transition-colors"
+							data-path="sitemap"
+							href="#"
+							>Sitemap</a
+						><span class="text-outline-variant text-[11px]">|</span
+						><a
+							class="font-caption text-[12px] text-text-body hover:text-secondary transition-colors"
+							data-path="procurement-guidelines"
+							href="#"
+							>Procurement Guidelines</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a
+			class="fixed bottom-space-lg right-space-lg w-10 h-10 bg-border-dark flex items-center justify-center text-on-primary hover:bg-neutral-800 transition-colors z-[900]"
+			href="#"
+			title="Back to top"
+			><span class="material-symbols-outlined text-[20px]"
+				>keyboard_arrow_up</span
+			></a
+		>
+	</body>
+</html>
