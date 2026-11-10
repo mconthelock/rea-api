@@ -1,0 +1,8 @@
+create table WIFCHKITEMMST
+(
+	ITEMID	CHAR(1),
+	ITEMTH	VARCHAR2(60),
+	ITEMEN	VARCHAR2(60),
+	CSTATUS	CHAR(1),
+	primary key (ITEMID)
+);

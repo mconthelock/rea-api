@@ -1,0 +1,27 @@
+ol 
+{
+	font-family: ms sans serif; 
+	font-size: 10pt;
+}
+
+font 
+{
+	font-family: ms sans serif; 
+	font-size: 10pt;
+}
+
+a 
+{
+	font-family: ms sans serif; 
+	font-size: 10pt;
+	text-decoration: none
+}
+
+a:hover {text-decoration: underline}
+
+.pagetitle 
+{
+	font-family: Verdana, MS Sans Serif;
+ 	font-size: 8pt;
+ 	color: #0000FF; 
+}

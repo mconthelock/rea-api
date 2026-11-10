@@ -1,0 +1,6 @@
+create table WSTPRREQ
+(
+	SVENDCODE	varchar2(12),
+	SPRODCODE	varchar2(15),
+	primary key (SVENDCODE,SPRODCODE)
+);

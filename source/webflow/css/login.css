@@ -1,0 +1,34 @@
+#login-box {
+	width: 1200px;
+	height: 600px;
+	padding: 300px 76px 0 510px;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(../images/Worklogin.png) no-repeat left top;
+	text-align: left;
+}
+
+#login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+}
+
+#login-box-field {
+	float: left;
+	display:inline;
+	width:240px;
+	margin:0;
+	margin:0 0 -7px 0;
+	padding-bottom: 120px;
+}
+
+	
+.form-login  {
+	width: 160px;
+	padding: 5px 4px 6px 3px;
+	border: 1px solid #FFFFFF;
+	font-size: 14px;
+}

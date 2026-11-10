@@ -1,0 +1,17 @@
+create table WSTREQ
+(
+	NFRMNO		NUMBER(3,0),
+	VORGNO		VARCHAR2(6),
+	CYEAR		CHAR(2),
+	CYEAR2		CHAR(4),
+	NRUNNO		NUMBER(6,0),
+	REQSTSNO	CHAR(1),
+	PPOSENO		char(1),
+	SVENDCODE	varchar2(12),
+	TSPORTDATE	date,
+	primary key(NFRMNO,VORGNO,CYEAR,CYEAR2,NRUNNO),
+	foreign key(NFRMNO,VORGNO,CYEAR,CYEAR2,NRUNNO) references form(NFRMNO,VORGNO,CYEAR,CYEAR2,NRUNNO),
+	foreign key(REQSTSNO) references WSTSTATUSMST(REQSTSNO),
+	foreign key(PPOSENO) references WSTPURPOSEMST(PPOSENO)
+--	foreign key(SVENDCODE) references amec.pvend(SVENDCODE)
+);

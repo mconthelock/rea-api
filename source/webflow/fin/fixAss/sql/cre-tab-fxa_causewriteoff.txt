@@ -1,0 +1,6 @@
+create table fxa_causewriteoff (
+	writeoffno		number(1,0),
+	writeoffdesc	varchar2(256),
+	primary key (writeoffno)	
+);
+

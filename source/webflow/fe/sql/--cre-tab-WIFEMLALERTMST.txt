@@ -1,0 +1,6 @@
+create table WIFEMLALERTMST
+(
+	SEMPNO	varchar2(12),
+	primary key (SEMPNO),
+	foreign key (sempno) references amec.aemployee(sempno)
+);

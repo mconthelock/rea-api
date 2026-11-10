@@ -1,0 +1,15 @@
+your password has already expired
+
+your password is valid 90 days from when the account was create or from when your password was last changed
+
+A password must be least 8 characters in length and contain minimum one of each of the following 3 character types
+
+
+Your password must be at least number characters; cannot repeat your previous number passwords; must contain capitals, numerals or punctuation; and cannot contain your account or full name. Please type a different password. Type a password which meets these requirements in both text boxes. 
+
+
+Passwords must contain at least one letter and one number.
+•Failed to update password. Passwords must not contain your username.
+•Failed to update password. Passwords must not contain repeating characters.
+•Failed to update password. Passwords must be at least 8 characters long.
+•Failed to update password. Passwords cannot be reused.

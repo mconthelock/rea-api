@@ -1,0 +1,7 @@
+create table WSTTYPEMST
+(
+	WSTNO	varchar2(2),
+	WSTNAME varchar2(100),
+	cstatus	char(1),
+	primary key (WSTNO)
+);

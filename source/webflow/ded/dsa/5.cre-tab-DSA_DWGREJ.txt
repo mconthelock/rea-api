@@ -1,0 +1,10 @@
+create table DSA_DWGREJ
+(
+	nFrmno 		number(3),
+	vOrgNo		varchar2(6),
+	cYear		char(2),
+	cYear2		char(4),
+	nRunNo		number(6),
+	dwgno		varchar2(9),
+	PRIMARY KEY(nFrmno,vorgno,cYear,cYear2,nrunno)
+);

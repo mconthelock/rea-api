@@ -1,0 +1,2 @@
+insert into WSTSTATUSMST values('1','Normal order (งานปกติ)');
+insert into WSTSTATUSMST values('2','Urgent order (such as cleaning booth or other งานพิเศษ (เช่น งานล้างบูทพ่นสี ดักกากตะกอนน้ำเสีย เป็นต้น)');

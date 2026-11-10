@@ -1,0 +1,5 @@
+
+delete from fxa_attdarform where nfrmno = '2' and vorgno ='080101' and cyear = '15' and cyear2= '2015' and nrunno = '1';
+delete from fxa_darform where nfrmno = '2' and vorgno ='080101' and cyear = '15' and cyear2= '2015' and nrunno = '1';
+delete from flow where nfrmno = '2' and vorgno ='080101' and cyear = '15' and cyear2= '2015' and nrunno = '1';
+delete from form where nfrmno = '2' and vorgno ='080101' and cyear = '15' and cyear2= '2015' and nrunno = '1';

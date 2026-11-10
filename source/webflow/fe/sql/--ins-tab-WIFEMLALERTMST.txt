@@ -1,0 +1,6 @@
+insert into WIFEMLALERTMST values('12001');
+insert into WIFEMLALERTMST values('13249');
+insert into WIFEMLALERTMST values('95025');
+insert into WIFEMLALERTMST values('07004');
+insert into WIFEMLALERTMST values('08182');
+insert into WIFEMLALERTMST values('97062');

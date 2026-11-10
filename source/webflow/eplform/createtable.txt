@@ -1,0 +1,360 @@
+create table msdraw (
+	ID          NUMBER(10)   	NOT NULL,
+	REQNO		VARCHAR2(30)  	NOT NULL,
+	REQDATE	Date,
+	DWGNO		CHAR(9)		NOT NULL,
+	PARTNAME	VARCHAR2(60),
+	REVNO		VARCHAR2(2),
+	VENDORCODE	VARCHAR2(12)  	NOT NULL,
+	VENDORNAME	VARCHAR2(50)  	NOT NULL,
+	TYPE		CHAR(1)		NOT NULL,
+	SENDBY	CHAR(1),
+	VREQNO	VARCHAR2(12)  	NOT NULL,
+	PICNO		VARCHAR2(12)  	NOT NULL,
+	DWGTYPE	CHAR(1),
+	STATUS	CHAR(1),
+	USERS	VARCHAR2(120),
+	UPDATETIME DATE
+)
+
+ALTER TABLE msdraw ADD (
+  CONSTRAINT msdraw_pk PRIMARY KEY (ID));
+
+CREATE SEQUENCE msdraw_seq;
+
+CREATE OR REPLACE TRIGGER msdraw_bir 
+BEFORE INSERT ON msdraw 
+FOR EACH ROW
+WHEN (new.id IS NULL)
+BEGIN
+  :new.id := msdraw_seq.NEXTVAL;
+END;
+
+
+create table WEBFORM.REQDRAW(
+	NFRMNO        	NUMBER(3)	not null,
+	VORGNO	   	   	VARCHAR2(6) 	not null,
+	CYEAR			CHAR(2)    	not null,
+	CYEAR2			CHAR(4)		not null,
+	NRUNNO			NUMBER(6)	not null,
+	TYPE			CHAR(1)		not null,
+	DWGTYPE			CHAR(1)		,
+	SENDBY			CHAR(1)		,
+   constraint PK_REQDRAW primary key (NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO),
+   foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO)
+)
+
+create table WEBFORM.REQDRAWLIST(
+	NFRMNO        	NUMBER(3)	not null,
+	VORGNO	   	   	VARCHAR2(6) not null,
+	CYEAR			CHAR(2)    	not null,
+	CYEAR2			CHAR(4)		not null,
+	NRUNNO			NUMBER(6)	not null,
+	ID				NUMBER(3)	not null,
+	DWGNO			CHAR(9)		not null,
+	REVNO			VARCHAR2(2)		,
+	VENDORNAME		VARCHAR2(50),
+	QTY				NUMBER(1)	,
+	REASON			VARCHAR2(400),
+	ITEMNO 			VARCHAR2(4),
+	PARTNAME		VARCHAR2(50),
+	EPLREVNO		CHAR(1)		,
+	EPLNOTE			VARCHAR2(400),
+	
+   constraint PK_REQDRAWLIST primary key (NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO,ID),
+   foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references REQDRAW(NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO)
+
+)
+
+create table WEBFORM.TEMPDRAW(
+	TID			NUMBER(10)    NOT NULL,
+	SID			NUMBER(10)    NOT NULL,
+	SEMPNO		VARCHAR2(12)  NOT NULL,
+	CYEAR2		CHAR(4)		  NOT NULL,
+    NRUNNO		NUMBER(6)	  NOT NULL,
+    ID			NUMBER(3)	  NOT NULL
+	
+	
+)
+
+ALTER TABLE TEMPDRAW ADD (
+  CONSTRAINT TEMPDRAW_pk PRIMARY KEY (TID));
+
+CREATE SEQUENCE TEMPDRAW_seq;
+
+CREATE OR REPLACE TRIGGER TEMPDRAW_bir 
+BEFORE INSERT ON TEMPDRAW 
+FOR EACH ROW
+WHEN (new.tid IS NULL)
+BEGIN
+  :new.tid := TEMPDRAW_seq.NEXTVAL;
+END;
+
+
+
+create table WEBFORM.TEMPCDRAW(
+	TID			NUMBER(10)    NOT NULL,
+	SEMPNO		VARCHAR2(12)  NOT NULL,
+	SID			NUMBER(10)    NOT NULL,
+    ID			NUMBER(10)	  NOT NULL
+)
+
+ALTER TABLE TEMPCDRAW ADD (
+  CONSTRAINT TEMPCDRAW_pk PRIMARY KEY (TID));
+
+CREATE SEQUENCE TEMPCDRAW_seq;
+
+CREATE OR REPLACE TRIGGER TEMPCDRAW_bir 
+BEFORE INSERT ON TEMPCDRAW 
+FOR EACH ROW
+WHEN (new.tid IS NULL)
+BEGIN
+  :new.tid := TEMPCDRAW_seq.NEXTVAL;
+END;
+
+
+
+create table WEBFORM.RNDRAW(
+	NFRMNO        	NUMBER(3)	not null,
+	VORGNO	   	   	VARCHAR2(6) not null,
+	CYEAR			CHAR(2)    	not null,
+	CYEAR2			CHAR(4)		not null,
+	NRUNNO			NUMBER(6)	not null,
+	ID				NUMBER(3)	not null,
+	TYPE			CHAR(1)		,
+	QCYEAR2			CHAR(4)		,
+	QNRUNNO 		NUMBER(6)	,
+	QID				CHAR(9)		,
+   constraint PK_RNDRAW primary key (NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO,ID),
+   foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO)
+)
+
+create table WEBFORM.CANDRAW(
+	NFRMNO        	NUMBER(3)	not null,
+	VORGNO	   	   	VARCHAR2(6) not null,
+	CYEAR			CHAR(2)    	not null,
+	CYEAR2			CHAR(4)		not null,
+	NRUNNO			NUMBER(6)	not null,
+	ID				NUMBER(3)	not null,
+    MID				NUMBER(10)  not null,
+    constraint PK_CANDRAW primary key (NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO,ID),
+    foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(NFRMNO, VORGNO,CYEAR,CYEAR2,NRUNNO)
+)
+
+
+CREATE VIEW V_REQDRAW AS (
+select 'EPL'||substr(rl.cyear2,3,2)||'-'||lpad(rl.nrunno, 6, '0') as REQNO , rl.DWGNO , rl.REVNO , rl.EPLREVNO  , rl.VENDORNAME , r.DWGTYPE , r.SENDBY From form f, REQDRAW r, REQDRAWLIST rl where f.nfrmno = r.nfrmno and f.vorgno = r.vorgno and f.cyear = r.cyear and f.cyear2 = r.cyear2 and f.nrunno = r.nrunno and r.nfrmno = rl.nfrmno and r.vorgno = rl.vorgno and r.cyear = rl.cyear and r.cyear2 = rl.cyear2 and r.nrunno = rl.nrunno and r.type = 'Q' and f.cst in ('1','2') and rl.cyear2||rl.nrunno||rl.ID not in (select rn.qcyear2||rn.nrunno||rn.QID from RNDRAW rn, form f where rn.nfrmno = f.nfrmno and rn.vorgno = f.vorgno and rn.cyear = f.cyear and rn.cyear2 = f.cyear2 and rn.nrunno = f.nrunno and f.cst in ('1','2'))
+union
+select REQNO , DWGNO , REVNO , '' as EPLREVNO , VENDORNAME , DWGTYPE , SENDBY from msdraw where status = 'I'
+union
+select 'EPL'||substr(rl.cyear2,3,2)||'-'||lpad(rl.nrunno, 6, '0') as REQNO , rl.DWGNO , rl.REVNO  , rl.EPLREVNO , rl.VENDORNAME , r.DWGTYPE , r.SENDBY From form f, REQDRAW r, REQDRAWLIST rl where f.nfrmno = r.nfrmno and f.vorgno = r.vorgno and f.cyear = r.cyear and f.cyear2 = r.cyear2 and f.nrunno = r.nrunno and r.nfrmno = rl.nfrmno and r.vorgno = rl.vorgno and r.cyear = rl.cyear and r.cyear2 = rl.cyear2 and r.nrunno = rl.nrunno and r.type in ('V','S','J') and f.cst in ('1')
+)
+
+
+CREATE VIEW V_QREQDRAW AS (
+select a.* , (a.eplapv + 150) as returndate From (
+select r.type , r.dwgtype , r.sendby , rl.* , a.sname , sec.ssec , f.cst , f.dreqdate  , (select dapvdate from flow where nfrmno = r.nfrmno and vorgno = r.vorgno and cyear = r.cyear and cyear2 = r.cyear2 and nrunno = r.nrunno and cextdata = '01') as demreqapv , (select dapvdate from flow where nfrmno = r.nfrmno and vorgno = r.vorgno and cyear = r.cyear and cyear2 = r.cyear2 and nrunno = r.nrunno and cextdata = '02') as eplapv , (select dapvdate from flow where nfrmno = r.nfrmno and vorgno = r.vorgno and cyear = r.cyear and cyear2 = r.cyear2 and nrunno = r.nrunno and cextdata = '03') as reqreceive From reqdraw r, reqdrawlist rl , form f , amec.aemployee a , amec.psection sec  where r.nfrmno = rl.nfrmno and r.vorgno = rl.vorgno and r.cyear = rl.cyear and r.cyear2 = rl.cyear2 and r.nrunno = rl.nrunno and r.type = 'Q' and f.nfrmno = r.nfrmno and f.vorgno = r.vorgno and f.cyear = r.cyear and f.cyear2 = r.cyear2 and f.nrunno = r.nrunno and f.cst in ('2','1') and f.vreqno = a.sempno and a.sseccode = sec.sseccode
+) a
+)
+
+CREATE VIEW V_RNDRAW AS(
+ select rn.* , f.vreqno , f.vinputer , f.vremark , f.dreqdate , f.creqtime , f.cst  from rndraw rn, form f where rn.nfrmno = f.nfrmno and rn.vorgno = f.vorgno and rn.cyear = f.cyear and rn.cyear2 = f.cyear2 and rn.nrunno = f.nrunno  
+)
+
+
+CREATE VIEW V_RQDRAW AS (
+select a.nfrmno , a.vorgno , a.EPLNOTE , a.cyear , a.cyear2 , a.NRUNNO , a.ID , a.DEMREQAPV , a.REVNO , a.REASON , a.EPLREVNO , a.SSEC , a.SNAME , a.EPLAPV , a.REQRECEIVE, a.returndate ,a.cst,'EPL'||SUBSTR(a.CYEAR2,3,2)||'-'||lpad(a.NRUNNO,6, '0') as REQNO , a.DREQDATE , a.DWGNO , a.PARTNAME , a.ITEMNO , a.VENDORNAME , a.QTY , a.SSEC||' / '||a.SNAME as REQTER , CASE WHEN a.EPLREVNO is NULL THEN a.REVNO ELSE a.EPLREVNO END as REV , 
+ CASE 
+ WHEN a.STATUS = 'R' THEN 'Finish' 
+ WHEN a.STATUS = 'N' THEN 'NON-Return' 
+ WHEN a.STATUS is NULL THEN
+ CASE WHEN RETURNDATE is NULL THEN '' 
+ WHEN RETURNDATE < SYSDATE THEN 'Remain'
+ ELSE 'Inuse' END
+ END as STSTATUS from (
+ select v.* , (select type from V_RNDRAW where qcyear2 = v.cyear2 and qnrunno = v.nrunno and qid = v.id and cst in ('1','2')) status From V_QREQDRAW v 
+ ) a 
+)
+
+CREATE VIEW V_RQDRAW AS(
+select a.nfrmno , a.vorgno , a.EPLNOTE , a.cyear , a.cyear2 , a.NRUNNO , a.ID , a.DEMREQAPV , a.REVNO , a.REASON , a.EPLREVNO , a.SSEC , a.SNAME , a.EPLAPV ,  a.REQRECEIVE, a.returndate  ,a.cst,'EPL'||SUBSTR(a.CYEAR2,3,2)||'-'||lpad(a.NRUNNO,6, '0') as REQNO  , a.DREQDATE , a.DWGNO , a.PARTNAME , a.ITEMNO , a.VENDORNAME , a.QTY , a.SSEC||' / '||a.SNAME as REQTER  , CASE WHEN a.EPLREVNO is NULL THEN a.REVNO ELSE a.EPLREVNO END as REV , 
+			   CASE 
+				  WHEN a.STATUS = 'R' THEN 'Finish' 
+				  WHEN a.STATUS = 'N' THEN 'NON-Return' 
+				  WHEN a.STATUS is NULL  THEN
+					CASE WHEN RETURNDATE is NULL THEN '' 
+					     WHEN RETURNDATE < SYSDATE THEN 'Remain'
+						 ELSE 'Inuse' END
+			   END as STSTATUS   from (
+			select v.* , (select type from V_RNDRAW where qcyear2 = v.cyear2 and qnrunno = v.nrunno and qid = v.id  and cst in ('1','2')) status From V_QREQDRAW v 
+	) a 
+)
+
+
+
+
+CREATE VIEW V_COVER AS(
+select c.* , 'V' as typereq , '' as ctype , m.vendorname , m.dwgno  From covervh c , covervl l , msdraw m where c.cyear2 = l.cyear2 and c.nrunno = l.nrunno and l.mid = m.id
+union
+select c.cyear2 , c.nrunno, c.cdate , c.csempno , c.coverno , 'Q' as typereq , c.ctype , v.vendorname , v.dwgno From coverqh c , coverql l, V_RQDRAW v where c.cyear2 = l.cyear2 and c.nrunno = l.nrunno and c.ctype = l.ctype  and l.rcyear2 = v.cyear2 and l.rnrunno = v.nrunno and l.rid = v.id
+
+)
+
+
+create table WEBFORM.ATTRNDWG(
+	nFrmNo 			NUMBER(3)  					not null,
+	vOrgNo 			VARCHAR2(6) 				not null,
+	cYear 			char(2)						not null,
+	cYear2 			char(4)						not null,
+	nRunNo 			NUMBER(6)					not null,
+	sfile			varchar2(70)				not null,
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+)
+
+create table WEBFORM.UPREV(
+	nFrmNo 			NUMBER(3)  		not null,
+	vOrgNo 			VARCHAR2(6) 		not null,
+	cYear 			char(2)			not null,
+	cYear2 			char(4)			not null,
+	nRunNo 			NUMBER(6)		not null,
+	mid			NUMBER(10)   		not null,
+	revup			VARCHAR2(2)		             ,
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo , mid),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+)
+
+create table WEBFORM.COVERQH(
+	cYear2 			char(4)			not null,
+	nRunNo 			NUMBER(6)		not null,
+	ctype			CHAR(1)			not null,
+	cdate			DATE			,
+	csempno			VARCHAR2(12)	,
+	coverno			VARCHAR2(14)	,
+	constraint COVERQH primary key (CYEAR2,NRUNNO,CTYPE)
+)
+
+create table WEBFORM.COVERQL(
+	cYear2 			char(4)			not null,
+	nRunNo 			NUMBER(6)		not null,
+	ctype			CHAR(1)			not null,
+	rcYear2 		char(4)			not null,
+	rnRunNo 		NUMBER(6)		not null,
+	rid 			NUMBER(3)		not null,
+	constraint PK_COVERQL primary key (CYEAR2, NRUNNO ,CTYPE, RCYEAR2, RNRUNNO, RID),
+    foreign key (CYEAR2, NRUNNO, CTYPE) references COVERQH(CYEAR2, NRUNNO, CTYPE)
+)
+
+create table WEBFORM.COVERVH(
+	cYear2 			char(4)			not null,
+	nRunNo 			NUMBER(6)		not null,
+	cdate			DATE			,
+	csempno			VARCHAR2(12)	,
+	coverno			VARCHAR2(14)	,
+	constraint COVERVH primary key (CYEAR2,NRUNNO)
+)
+
+create table WEBFORM.COVERVL(
+	cYear2 			char(4)			not null,
+	nRunNo 			NUMBER(6)		not null,
+	mid 			NUMBER(10)		not null,
+	constraint PK_COVERVL primary key (CYEAR2, NRUNNO, MID),
+    foreign key (CYEAR2, NRUNNO) references COVERVH(CYEAR2, NRUNNO),
+	foreign key (MID) references MSDRAW(ID)
+)
+
+
+
+CREATE VIEW RPQ AS(
+
+select * From (
+select * From V_RQDRAW v LEFT JOIN (select h.coverno , h.cdate as createcover , l.cyear2 as ccyear2 , l.nrunno as cnrunno , l.ctype , l.RCYEAR2 , l.rnrunno , l.rid from  COVERQH h , COVERQL l where h.cyear2 = l.cyear2 and h.nrunno = l.nrunno and h.ctype = l.ctype) c
+ON V.cyear2 = c.rcyear2 and V.nrunno = c.rnrunno and V.ID = c.RID
+)rq LEFT JOIN (select  rn.QID, rn.qnrunno , rn.qcyear2 ,
+	CASE  
+		WHEN rn.type = 'N' THEN 'NR'||SUBSTR(rn.CYEAR2,3,2)||'-'||lpad(rn.NRUNNO,6, '0')
+		WHEN rn.type = 'R' THEN 'RE'||SUBSTR(rn.CYEAR2,3,2)||'-'||lpad(rn.NRUNNO,6, '0')
+	END as returnno 
+
+, f.dreqdate as rnreqdate , fl.DAPVDATE as rnapvdate From rndraw rn, form f, flow fl where rn.nfrmno = f.nfrmno and rn.vorgno =  f.vorgno and rn.cyear = f.cyear and rn.cyear2 = f.cyear2 and rn.nrunno = f.nrunno and f.nfrmno = fl.nfrmno and f.vorgno = fl.vorgno and f.cyear2 = fl.cyear2 and f.nrunno = fl.nrunno and fl.cextdata = '03'
+
+)rn on rq.cyear2 = rn.qcyear2 and rq.nrunno = rn.qnrunno and rq.ID = rn.QID
+
+)
+
+
+CREATE VIEW RPN AS(
+
+
+select REQNO , REQUESTER , SSEC , SDWGTYPE , SSENDBY , TYPE , DWGTYPE , SENDBY , DWGNO , REVNO , VENDORNAME , QTY , REASON , ITEMNO , PARTNAME , EPLREVNO , EPLNOTE , DREQDATE as REQDATE , DEMREQAPV , EPLAPV , REQRECEIVE , UREQNO , UOLDREV , UREVUP , SENTUPDATE , PICUPAPV , CANCELNO , EPLAPVCAN , CANDATE   , CASE WHEN CANCELNO is NULL THEN 'Inuse'
+	     ELSE 'Cancelled' END as STATUS  
+ from (
+
+select *
+
+ from (
+select m.* , UREQNO , UOLDREV , UREVUP , UREVNO , SENTUPDATE  , PICUPAPV  From (
+select 'EPL'||substr(rl.cyear2,3,2)||'-'||lpad(rl.nrunno, 6, '0') as REQNO , a.sname as REQUESTER , sec.ssec,
+	 CASE WHEN r.DWGTYPE is NULL THEN '' 
+	 	WHEN r.DWGTYPE = 'T'   THEN 'TEM'
+		WHEN r.DWGTYPE = 'S'   THEN 'STD'
+            ELSE '' END as SDWGTYPE ,
+	 CASE WHEN r.SENDBY = '1' THEN 'Paper'
+            WHEN r.SENDBY = '2' THEN 'Pdf'
+            END as SSENDBY 
+	,r.TYPE , r.DWGTYPE , r.SENDBY , rl.* , f.dreqdate , (select DAPVDATE from flow where cextdata = '01' and nfrmno = r.nfrmno  and vorgno = r.vorgno and cyear=r.cyear and cyear2=r.cyear2 and nrunno = r.nrunno  ) as DEMREQAPV , (select DAPVDATE from flow where cextdata = '02' and nfrmno = r.nfrmno  and vorgno = r.vorgno and cyear=r.cyear and cyear2=r.cyear2 and nrunno = r.nrunno  ) as EPLAPV , (select DAPVDATE from flow where cextdata = '03' and nfrmno = r.nfrmno  and vorgno = r.vorgno and cyear=r.cyear and cyear2=r.cyear2 and nrunno = r.nrunno  ) as REQRECEIVE From reqdraw r , reqdrawlist rl , form f , amec.aemployee a , amec.psection sec where r.nfrmno = rl.nfrmno and r.vorgno = rl.vorgno and r.cyear = rl.cyear and r.cyear2 = rl.cyear2 and r.nrunno = rl.nrunno and r.type <> 'Q' and r.nfrmno = f.nfrmno and r.vorgno = f.vorgno and r.cyear = f.cyear and r.cyear2 = f.cyear2 and r.nrunno = f.nrunno and f.vreqno = a.sempno and a.sseccode = sec.sseccode
+
+) m LEFT JOIN (select  m.REQNO as UREQNO , m.dwgno as UDWGNO , m.TYPE as UTYPE , m.vendorname as UVENDORNAME , m.revno as UREVNO , m.dwgtype as UDWGTYPE , m.sendby as USENDBY , m.REVNO as UOldrev  , u.REVUP as UREVUP, f.DREQDATE as SENTUPDATE , fl.DAPVDATE as PICUPAPV From uprev u , msdraw m , form f , flow fl where u.MID = m.ID and u.nfrmno = f.nfrmno and u.vorgno = f.vorgno and u.cyear = f.cyear and u.cyear2 = f.cyear2 and u.nrunno = f.nrunno and f.nfrmno = fl.nfrmno and f.vorgno = fl.vorgno and f.cyear = fl.cyear and f.cyear2 = fl.cyear2 and f.nrunno = fl.nrunno and fl.cextdata = '02' 
+) u on m.REQNO = u.UREQNO and m.DWGNO = u.UDWGNO and m.REVNO = u.UREVNO and m.VENDORNAME = u.UVENDORNAME and m.DWGTYPE = u.UDWGTYPE and m.TYPE = u.UTYPE and m.SENDBY = u.USENDBY
+
+)f LEFT JOIN (select 'CD'||substr(c.cyear2,3,2)||'-'||lpad(c.nrunno, 6, '0') as CANCELNO , fl.DAPVDATE as EPLAPVCAN , f.DREQDATE as CANDATE , ms.DWGNO as CDWGNO , ms.REVNO as CREVNO , ms.VENDORNAME as CVENDORNAME , ms.TYPE as CTYPE , ms.DWGTYPE as CDWGTYPE , ms.SENDBY as CSENDBY  From candraw c , form f , flow fl , msdraw ms where c.MID = ms.ID and c.nfrmno = f.nfrmno and c.vorgno = f.vorgno and c.cyear = f.cyear and c.cyear2 = f.cyear2 and c.nrunno = f.nrunno and f.nfrmno = fl.nfrmno and f.vorgno = fl.vorgno and f.cyear = fl.cyear and f.cyear2 = fl.cyear2 and f.nrunno = fl.nrunno and fl.cextdata = '03') c
+on f.DWGNO = c.CDWGNO and f.TYPE = c.CTYPE and f.DWGTYPE = c.CDWGTYPE and f.SENDBY = c.CSENDBY and f.VENDORNAME = c.CVENDORNAME and f.REVNO = c.CREVNO
+
+)
+
+
+union
+
+select REQNO , REQUESTER , SSEC , SDWGTYPE , SSENDBY , TYPE , DWGTYPE , SENDBY , DWGNO , REVNO , VENDORNAME , QTY , REASON , ITEMNO , PARTNAME , EPLREVNO , EPLNOTE , REQDATE , DEMREQAPV , EPLAPV , REQRECEIVE , UREQNO , UOLDREV , UREVUP , SENTUPDATE , PICUPAPV , CANCELNO , EPLAPVCAN , CANDATE , STATUS
+    
+from (
+
+
+select * From (
+
+select * From (
+
+select REQNO , SNAME as REQUESTER , SSEC , SDWGTYPE , SSENDBY , TYPE , DWGTYPE , SENDBY , DWGNO , REVNO , VENDORNAME , 1 as QTY , REASON , ITEMNO , PARTNAME , EPLREVNO , EPLNOTE , REQDATE , DEMREQAPV , EPLAPV , REQRECEIVE , 
+
+CASE WHEN STATUS = 'I' THEN 'Inuse'   
+     WHEN STATUS = 'C' THEN 'Cancelled'
+     ELSE '' END as STATUS
+from (
+select m.* , a.sname , sec.ssec , 
+       CASE WHEN m.DWGTYPE is NULL THEN '' 
+	 	WHEN m.DWGTYPE = 'T'   THEN 'TEM'
+		WHEN m.DWGTYPE = 'S'   THEN 'STD'
+            ELSE '' END as SDWGTYPE ,
+	 CASE WHEN m.SENDBY = '1' THEN 'Paper'
+            WHEN m.SENDBY = '2' THEN 'Pdf'
+            END as SSENDBY  From msdraw m , amec.aemployee a , amec.psection sec where m.VREQNO = a.sempno and a.sseccode = sec.sseccode 
+)m LEFT JOIN (select  r.SENDBY as RSENDBY , r.DWGTYPE as RDWGTYPE, r.TYPE as RTYPE , l.VENDORNAME as RVENDORNAME , l.REVNO as RREVNO , l.DWGNO as RDWGNO, l.REASON , l.ITEMNO  , l.EPLREVNO , l.EPLNOTE ,
+ (select DAPVDATE from flow where cextdata = '01' and nfrmno = r.nfrmno and vorgno = r.vorgno  and cyear = r.cyear and cyear2 = r.cyear2  and nrunno =  r.nrunno) as DEMREQAPV ,
+ (select DAPVDATE from flow where cextdata = '02' and nfrmno = r.nfrmno and vorgno = r.vorgno  and cyear = r.cyear and cyear2 = r.cyear2  and nrunno =  r.nrunno) as EPLAPV,
+(select DAPVDATE from flow where cextdata = '03' and nfrmno = r.nfrmno and vorgno = r.vorgno  and cyear = r.cyear and cyear2 = r.cyear2  and nrunno =  r.nrunno) as REQRECEIVE
+from reqdraw r, reqdrawlist l where r.nfrmno = l.nfrmno and r.vorgno = l.vorgno and r.cyear = l.cyear and r.cyear2 = l.cyear2 and r.nrunno = l.nrunno 
+)r
+on m.DWGNO = r.RDWGNO and m.REVNO = r.RREVNO and m.VENDORNAME = r.RVENDORNAME and m.TYPE = r.RTYPE and m.SENDBY = r.RSENDBY and m.DWGTYPE = r.RDWGTYPE
+
+)B LEFT JOIN (select  m.REQNO as UREQNO , m.dwgno as UDWGNO , m.TYPE as UTYPE , m.vendorname as UVENDORNAME , m.revno as UREVNO , m.dwgtype as UDWGTYPE , m.sendby as USENDBY , m.REVNO as UOldrev  , u.REVUP as UREVUP, f.DREQDATE as SENTUPDATE , fl.DAPVDATE as PICUPAPV From uprev u , msdraw m , form f , flow fl where u.MID = m.ID and u.nfrmno = f.nfrmno and u.vorgno = f.vorgno and u.cyear = f.cyear and u.cyear2 = f.cyear2 and u.nrunno = f.nrunno and f.nfrmno = fl.nfrmno and f.vorgno = fl.vorgno and f.cyear = fl.cyear and f.cyear2 = fl.cyear2 and f.nrunno = fl.nrunno and fl.cextdata = '02' 
+) U on B.DWGNO = U.UDWGNO and B.TYPE = U.UTYPE and B.VENDORNAME = U.UVENDORNAME and B.revno = U.UREVNO and B.dwgtype = U.UDWGTYPE and B.SENDBY = U.USENDBY 
+) F LEFT JOIN (select 'CD'||substr(c.cyear2,3,2)||'-'||lpad(c.nrunno, 6, '0') as CANCELNO , fl.DAPVDATE as EPLAPVCAN , f.DREQDATE as CANDATE , ms.DWGNO as CDWGNO , ms.REVNO as CREVNO , ms.VENDORNAME as CVENDORNAME , ms.TYPE as CTYPE , ms.DWGTYPE as CDWGTYPE , ms.SENDBY as CSENDBY  From candraw c , form f , flow fl , msdraw ms where c.MID = ms.ID and c.nfrmno = f.nfrmno and c.vorgno = f.vorgno and c.cyear = f.cyear and c.cyear2 = f.cyear2 and c.nrunno = f.nrunno and f.nfrmno = fl.nfrmno and f.vorgno = fl.vorgno and f.cyear = fl.cyear and f.cyear2 = fl.cyear2 and f.nrunno = fl.nrunno and fl.cextdata = '03') c
+on f.DWGNO = c.CDWGNO and f.TYPE = c.CTYPE and f.DWGTYPE = c.CDWGTYPE and f.SENDBY = c.CSENDBY and f.VENDORNAME = c.CVENDORNAME and f.REVNO = c.CREVNO
+)
+)
+
+set usrAuth
+
+select * from usrAuth 
+
+  

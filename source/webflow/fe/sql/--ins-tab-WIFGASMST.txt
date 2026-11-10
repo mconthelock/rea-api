@@ -1,0 +1,8 @@
+insert into wifgasmst values('1','ก๊าซธรรมชาติ (NG)','1');
+insert into wifgasmst values('2','ก๊าซไนโตรเจน (N2)','1');
+insert into wifgasmst values('3','ก๊าซอ๊อกซิเจน (O2)','1');
+insert into wifgasmst values('4','ก๊าซคาร์บอนไดออกไซด์ (CO2)','1');
+insert into wifgasmst values('5','ก๊าซอาร์กอน (Argon)','1');
+insert into wifgasmst values('6','ก๊าซอะซิทิลีน (Acytelene)','1');
+insert into wifgasmst values('7','ก๊าซปิโตรเลียมเหลว (LPG)','1');
+insert into wifgasmst values('8','ก๊าซเลเซอร์ (Laser)','1');

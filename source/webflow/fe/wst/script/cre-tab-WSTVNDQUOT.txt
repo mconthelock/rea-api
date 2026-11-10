@@ -1,0 +1,8 @@
+create table WSTVNDQUOT
+(
+	SVENDCODE	varchar2(12),
+	QUOTNO	varchar2(40),
+	cstatus	char(1),
+	primary key (SVENDCODE,QUOTNO)
+--	foreign key (SVENDCODE) references amec.pvender(SVENDCODE)
+);

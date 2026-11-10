@@ -1,0 +1,7 @@
+create table WIFGASSUPMST
+(
+	SEMPNO	varchar2(12),
+	--cstatus	char(1),
+	primary key (SEMPNO),
+	foreign key (sempno) references amec.aemployee(sempno)
+);

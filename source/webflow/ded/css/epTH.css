@@ -1,0 +1,24 @@
+.THASiteNav {font-family: MS Sans Serif; font-size: 8pt; color: #FFFFFF; text-decoration: none}
+.ASiteNav:Hover {color: #FF0000; text-decoration: underline}
+
+.THAText {font-family: MS Sans Serif; font-size: 8pt; color: #0000FF; text-decoration: none}
+.THAText:Hover {color: #FF0000; text-decoration: underline}
+
+.THATextNorm {font-family: MS Sans Serif; font-size: 8pt; color: #0000FF; text-decoration: underline}
+.THATextNorm:Hover {color: #FF0000;}
+
+.THANormal {font-family: MS Sans Serif; font-size: 8pt; color: #FFFFFF; text-decoration: none}
+.THANormal:Hover {color: #FF0000; text-decoration: underline}
+
+.THFontText {font-family: MS Sans Serif; font-size: 8pt; color: #000000}
+.THFontTextRed {font-family: MS Sans Serif; font-size: 8pt; color: #FF0000}
+.THFontTextBlue {font-family: MS Sans Serif; font-size: 8pt; color: #0000FF}
+.THFontTextHdr {font-family: MS Sans Serif; font-size: 8pt; color: #FFFFFF; font-weight: bold}
+.THFontTextBlueHilight {font-family: MS Sans Serif; font-style: italic; font-weight: bold; font-size: 8pt; color: #0000FF}
+
+.THFontNormal {font-family: MS Sans Serif; font-size: 8pt; color: #FFFFFF}
+.THFontNormalHdr {font-family: MS Sans Serif; font-size: 8pt; color: #FFFFFF}
+
+.THInputNormal {font-family:  MS Sans Serif; font-size: 8pt}
+
+.THAlertMsg {font-family: ms sans serif; color: #FF0000}

@@ -1,0 +1,8 @@
+insert into DSA_CHGPOINTMST values('1','Material(*1)');
+insert into DSA_CHGPOINTMST values('2','Child drawing number changed in a parent drawing(*2)');
+insert into DSA_CHGPOINTMST values('3','Production Start Change');
+insert into DSA_CHGPOINTMST values('4','Equipments');
+insert into DSA_CHGPOINTMST values('5','Part');
+insert into DSA_CHGPOINTMST values('6','Dimension');
+insert into DSA_CHGPOINTMST values('7','Item 295 (*3)');
+

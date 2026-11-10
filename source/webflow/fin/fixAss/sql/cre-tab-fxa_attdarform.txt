@@ -1,0 +1,12 @@
+create table fxa_attdarform(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(6) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	typeno		number(2, 0),
+	id			number(3,0),
+	sfile		varchar2(70),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo, id),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);

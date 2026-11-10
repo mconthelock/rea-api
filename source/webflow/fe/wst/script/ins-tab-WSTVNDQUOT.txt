@@ -1,0 +1,7 @@
+insert into WSTVNDQUOT values('62664','TOMS 558/2563','1');
+insert into WSTVNDQUOT values('62696','QT2020020095','1');
+insert into WSTVNDQUOT values('61657','PK.005/2563','1');
+insert into WSTVNDQUOT values('62744','SSC6302084','1');
+insert into WSTVNDQUOT values('62193','Fs0372/2020','1');
+insert into WSTVNDQUOT values('62636','0000022394','1');
+insert into WSTVNDQUOT values('62357','QUO115179 R2','1');

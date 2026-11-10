@@ -1,0 +1,12 @@
+insert into fxa_grpMst(grpCode, grpdesc) values('001','LAND');
+insert into fxa_grpMst(grpCode, grpdesc) values('002','BUILDING-FACTORY');
+insert into fxa_grpMst(grpCode, grpdesc) values('002-2','BUILDING-OFFICE');
+insert into fxa_grpMst(grpCode, grpdesc) values('003','STRUCTURE-FACTORY');
+insert into fxa_grpMst(grpCode, grpdesc) values('003-2','STRUCTURE-OFFICE');
+insert into fxa_grpMst(grpCode, grpdesc) values('004','MACHINERY');
+insert into fxa_grpMst(grpCode, grpdesc) values('005','TOOLS & EQUIPMENT');
+insert into fxa_grpMst(grpCode, grpdesc) values('006','OFF.FUR. & FIXTURE');
+insert into fxa_grpMst(grpCode, grpdesc) values('007','SOFTWARE');
+insert into fxa_grpMst(grpCode, grpdesc) values('008','VEHICLES');
+insert into fxa_grpMst(grpCode, grpdesc) values('010','FACT.FUR. & FIXTURE');
+insert into fxa_grpMst(grpCode, grpdesc) values('011','LAND IMPROVEMENT');

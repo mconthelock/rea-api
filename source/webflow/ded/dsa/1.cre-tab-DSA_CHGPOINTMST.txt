@@ -1,0 +1,6 @@
+create table DSA_CHGPOINTMST
+(
+	pointno	char(1),
+	point	varchar2(50)
+	PRIMARY KEY(pointno)
+)

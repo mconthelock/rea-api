@@ -1,0 +1,6 @@
+create table fxa_ccMst (
+	ccCode		number(7,0),
+	ccDesp		varchar2(256),
+	primary key (ccCode)	
+);
+

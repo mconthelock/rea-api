@@ -1,0 +1,6 @@
+create table WSTPURPOSEMST
+(
+	PPOSENO	char(1),
+	PURPOSE varchar2(50),
+	primary key (PPOSENO)
+);

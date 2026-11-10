@@ -1,0 +1,294 @@
+BODY {
+	FONT-SIZE: 14px; MARGIN: 0px; COLOR: #222222; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' ,Tahoma; TEXT-DECORATION: none
+}
+TABLE {
+	FONT-SIZE: 14px; MARGIN: 0px; COLOR: #222222; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' ,Tahoma; TEXT-DECORATION: none
+}
+A {
+	FONT-SIZE: 14px; COLOR: mediumblue; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 14px; COLOR: #f8a624; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.TableBorder {
+	BORDER-RIGHT: #92949a 1px solid; BORDER-TOP: #92949a 1px solid; BORDER-LEFT: #92949a 1px solid; BORDER-BOTTOM: #92949a 1px solid; BORDER-COLLAPSE: collapse
+}
+.DashBorder {
+	BORDER-RIGHT: #92949a 1px dashed; BORDER-BOTTOM: #92949a 1px dashed
+}
+.TemplateBorder {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid; BORDER-COLLAPSE: collapse
+}
+.Title {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #247e05; BORDER-BOTTOM: #d9d6d6 2px solid; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.Subtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #247e05; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.BTBorder {
+	BORDER-BOTTOM: #d21515 2px solid
+}
+.Warning {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #f52616; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.14BWhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.uptodate {
+	FONT-SIZE: 10px; COLOR: #fb7600; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.Topic {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #fb7600; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.14liteblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #557890; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.bglogo {
+	BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat
+}
+.monthly {
+	BACKGROUND-POSITION: left top; BACKGROUND-REPEAT: no-repeat
+}
+.forecasttime {
+	FONT-SIZE: 10px; COLOR: #f8a008; FONT-FAMILY: 'MS Sans Serif' , 'Microsoft Sans Serif' , Tahoma; TEXT-DECORATION: none
+}
+.RowHeader {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #d0d0d0; TEXT-ALIGN: center
+}
+.RH {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #d0d0d0; TEXT-ALIGN: center
+}
+.RowHeader TD {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#EDE8EA' , endColorStr= '#FFFFFF' , gradientType= '0' )
+}
+.RH TD {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#EDE8EA' , endColorStr= '#FFFFFF' , gradientType= '0' )
+}
+.RowHeader2 {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #f3f3f3; TEXT-ALIGN: left
+}
+.RH2 {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #f3f3f3; TEXT-ALIGN: left
+}
+.RowDetail {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: white
+}
+.RD {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: white
+}
+.RowAltDetail {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #f7f7f4
+}
+.RAD {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #f7f7f4
+}
+.RowDetailSmall {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: white
+}
+.RDS {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: white
+}
+.RowAltDetailSmall {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: #f7f7f4
+}
+.RADS {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: #f7f7f4
+}
+.RowFooter {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #d0d0d0; TEXT-ALIGN: center
+}
+.RF {
+	FONT-WEIGHT: bold; COLOR: #505050; BACKGROUND-COLOR: #d0d0d0; TEXT-ALIGN: center
+}
+.RowFooter TD {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#FFFFFF' , endColorStr= '#EDE8EA' , gradientType= '0' )
+}
+.RF TD {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#FFFFFF' , endColorStr= '#EDE8EA' , gradientType= '0' )
+}
+.RowFooter2 {
+	FONT-SIZE: 12px; COLOR: #505050; BACKGROUND-COLOR: #f3f3f3
+}
+.RF2 {
+	FONT-SIZE: 12px; COLOR: #505050; BACKGROUND-COLOR: #f3f3f3
+}
+.MaxTemp {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: darkred; FONT-FAMILY: Tahoma, 'MS Sans Serif' , 'Microsoft Sans Serif'
+}
+.MinTemp {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: darkblue; FONT-FAMILY: Tahoma, 'MS Sans Serif' , 'Microsoft Sans Serif'
+}
+.MaxTempProvince {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: darkred; FONT-FAMILY: Tahoma, 'MS Sans Serif' , 'Microsoft Sans Serif'
+}
+.MinTempProvince {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: darkblue; FONT-FAMILY: Tahoma, 'MS Sans Serif' , 'Microsoft Sans Serif'
+}
+.RainArea {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #515151; FONT-FAMILY: Tahoma, 'MS Sans Serif' , 'Microsoft Sans Serif'
+}
+.ForecastWeb {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #515151; FONT-FAMILY: 'monospace'
+}
+.SmallText {
+	FONT-SIZE: 12px
+}
+.SmallText A:hover {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.DayName {
+	FONT-WEIGHT: bold; COLOR: #505050
+}
+.DayDate {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-FAMILY: Tahoma
+}
+.SelectStation {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 8px; BORDER-LEFT: #ffffff 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.SelectStation A {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; BORDER-LEFT: medium none; COLOR: #505050; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+.UnselectStation {
+	BORDER-RIGHT: #c4bfbf 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #c4bfbf 1px solid; PADDING-LEFT: 8px; BORDER-LEFT: #c4bfbf 1px solid; BACKGROUND-COLOR: #efefef
+}
+.UnselectStation A {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: #505050; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+.CC {
+	TEXT-ALIGN: center
+}
+.CL {
+	PADDING-LEFT: 5px; TEXT-ALIGN: left
+}
+.CR {
+	PADDING-RIGHT: 5px; TEXT-ALIGN: right
+}
+.RowBlock {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#EDE8EA' , endColorStr= '#FFFFFF' , gradientType= '0' )
+}
+.RB {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#EDE8EA' , endColorStr= '#FFFFFF' , gradientType= '0' )
+}
+.IconImager {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid
+}
+.II {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid
+}
+.Panel {
+	BACKGROUND-COLOR: #ede8ea; empty-cells: show
+}
+.PanelHeader TD {
+	BORDER-BOTTOM: #c4bfbf 1px solid; HEIGHT: 28px
+}
+.PH TD {
+	BORDER-BOTTOM: #c4bfbf 1px solid; HEIGHT: 28px
+}
+.PanelLeftHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #247e05; TEXT-DECORATION: none
+}
+.PLH {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #247e05; TEXT-DECORATION: none
+}
+.PanelRightHeader {
+	FONT-SIZE: 12px; COLOR: #fb7600; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PRH {
+	FONT-SIZE: 12px; COLOR: #fb7600; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PanelFooter TD {
+	BORDER-TOP: #ede8ea 1px solid; HEIGHT: 8px
+}
+.PF TD {
+	BORDER-TOP: #ede8ea 1px solid; HEIGHT: 8px
+}
+.PanelLeftFooter {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PLF {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PanelLeftFooter A {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PLF A {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PanelLeftFooter A:hover {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PLF A:hover {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.PanelRightFooter {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PRF {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PanelRightFooter A {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PRF A {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PanelRightFooter A:hover {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PRF A:hover {
+	FONT-SIZE: 12px; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.PanelMessageTop TD {
+	HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.PMT TD {
+	HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.PanelMessage {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#FFFFFF' , endColorStr= '#EDE8EA' , gradientType= '1' ); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+.PM {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=  '#FFFFFF' , endColorStr= '#EDE8EA' , gradientType= '1' ); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+.PanelMessageBottom TD {
+	HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.PMB TD {
+	HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.PanelTopLeft {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../images/inv_corner1.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PTL {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../images/inv_corner1.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.inv_c1 {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../images/inv_corner1.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PanelTopRight {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/inv_corner2.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PTR {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/inv_corner2.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.inv_c2 {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/inv_corner2.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PanelBottomLeft {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(../images/inv_corner3.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PBL {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(../images/inv_corner3.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.inv_c3 {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(../images/inv_corner3.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PanelBottomRigth {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(../images/inv_corner4.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.PBR {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(../images/inv_corner4.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}
+.inv_c4 {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(../images/inv_corner4.gif); WIDTH: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 8px
+}

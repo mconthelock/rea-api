@@ -1,0 +1,8 @@
+create table fxa_locMst (
+	locCode		varchar2(6),
+	locName		varchar2(256),
+	vorgno 		varchar2(6),
+	sposcode 	varchar2(2),
+	primary key (locCode)	
+);
+

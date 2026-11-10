@@ -1,0 +1,30 @@
+.ASiteNav {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FFFFFF; text-decoration: none}
+.ASiteNav:Hover {color: #FF0000; text-decoration: underline}
+
+.AText {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #0000FF; text-decoration: none}
+.AText:Hover {color: #FF0000; text-decoration: underline}
+
+.ATextNorm {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #0000FF; text-decoration: underline}
+.ATextNorm:Hover {color: #FF0000;}
+
+.ANormal {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FFFFFF; text-decoration: none}
+.ANormal:Hover {color: #FF0000; text-decoration: underline}
+
+font {font-family: ms sans serif; font-size: 10pt}
+input {font-family: ms sans serif; font-size: 10pt}
+
+.FontText {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #000000}
+.FontTextRed {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FF0000}
+.FontTextBlue {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #0000FF}
+.FontTextHdr {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FFFFFF; font-weight: bold}
+.FontTextBlueHilight {font-family: Verdana, MS Sans Serif; font-style: italic; font-weight: bold; font-size: 8pt; color: #0000FF}
+
+.FontNormal {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FFFFFF}
+.FontNormalHdr {font-family: Verdana, MS Sans Serif; font-size: 8pt; color: #FFFFFF}
+
+.inputNormal {font-family:  Verdana, MS Sans Serif; font-size: 8pt}
+
+.alertMsg {font-family: Verdana, MS Sans Serif; color: #FF0000; font-size: 8pt}
+
+.FontOT{font-family: ms sans serif; font-size: 12pt}
+.FontHead{font-family: ms sans serif; font-size: 24pt}

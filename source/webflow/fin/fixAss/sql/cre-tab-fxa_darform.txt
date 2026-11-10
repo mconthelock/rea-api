@@ -1,0 +1,19 @@
+create table fxa_darform (
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(6) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	grpcode		varchar2(5),
+	loccode		varchar2(6),
+	assetno		varchar2(9),
+	nqty		number(2,0),
+	vUnit		varchar2(10),
+	writeoffno		number(1,0),
+	vremark		varchar2(500),
+	primary key (nFrmNo, vOrgNo,cYear,cYear2, nRunNo,assetno),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo),
+	foreign key (grpcode, loccode, assetno) references fxa_faMst(grpcode, loccode, assetno),
+	foreign key (writeoffno) references fxa_causewriteoff(writeoffno)
+);
+

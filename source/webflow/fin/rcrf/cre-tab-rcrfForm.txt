@@ -1,0 +1,44 @@
+create table RcptRfndForm(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	sprno		varchar2(12),	
+	cpayby		char(1),	
+	dpaydate		date,
+	cpayfrtime	char(4),
+	cpaytotime	char(4),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+create table RcptRfndFormList(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	id		number(2,0),
+	description	varchar2(256),
+	namount		number(15,3),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo,id),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references RcptRfndForm(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+
+create table attRcptRfndForm(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	id		number(2,0),
+	sfile		varchar2(70),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo, id),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+
+delete from RcptRfndFormList where nfrmno = '5' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno= '2' ;
+delete from attRcptRfndForm where nfrmno = '5' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno= '2' ;
+delete from RcptRfndForm where nfrmno = '5' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno= '2' ;
+delete from flow  where nfrmno = '5' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno= '2' ;
+delete from form  where nfrmno = '5' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno= '2' ;

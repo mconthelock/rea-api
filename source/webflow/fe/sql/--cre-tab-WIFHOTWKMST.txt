@@ -1,0 +1,7 @@
+create table WIFHOTWKMST
+(
+	HOTWKNO	char(1),
+	HOTWKSCOPE varchar2(50),
+	cstatus	char(1),
+	primary key (HOTWKNO)
+);

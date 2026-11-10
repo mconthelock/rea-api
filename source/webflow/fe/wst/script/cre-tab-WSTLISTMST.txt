@@ -1,0 +1,8 @@
+create table WSTLISTMST
+(
+	WSTNO		varchar2(3),
+	SVENDCODE	varchar2(12),
+	primary key (SVENDCODE,WSTNO),
+	foreign key (WSTNO) references WSTTYPEMST(WSTNO)
+--	foreign key (SVENDCODE) references WSTVNDQUOT(SVENDCODE)
+);

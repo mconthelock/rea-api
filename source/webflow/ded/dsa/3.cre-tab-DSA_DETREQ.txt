@@ -1,0 +1,14 @@
+create table DSA_DETREQ
+(
+	nFrmno 		number(3),
+	vOrgNo		varchar2(6),
+	cYear		char(2),
+	cYear2		char(4),
+	nRunNo		number(6),
+	dwgno		varchar2(9),
+	revno		varchar2(2),
+	pointno		char(1),
+	PRIMARY KEY(nFrmno,vorgno,cYear,cYear2,nrunno,dwgno,pointno),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo),
+	foreign key (pointno) references DSA_CHGPOINTMST(pointno)
+);

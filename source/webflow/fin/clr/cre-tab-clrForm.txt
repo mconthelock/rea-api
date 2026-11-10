@@ -1,0 +1,47 @@
+create table clrAdvForm(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	cyadv		char(4),
+	nnoadv		number(6, 0),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+create table clrAdvList(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	id		number(2,0),
+	svendinv		varchar2(90),
+	namount		number(15,3),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo,id),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+
+create table attClrFrm(
+	nFrmNo 		number(3, 0),
+	vOrgNo 		varchar2(5) default '00',
+	cYear 		char(2),
+	cYear2 		char(4),
+	nRunNo 		number(6, 0),
+	id		number(2,0),
+	sfile		varchar2(70),
+	primary key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo, id),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);
+
+
+delete from attClrFrm  where 
+nfrmno = '6' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno = '1' ;
+delete from clrList  where 
+nfrmno = '6' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno = '1' ;
+delete from clrForm  where 
+nfrmno = '6' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno = '1' ;
+delete from flow  where 
+nfrmno = '6' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno = '1' ;
+delete from form  where 
+nfrmno = '6' and vorgno = '80101' and cyear = '13' and cyear2 = '2013' and nrunno = '1' ;

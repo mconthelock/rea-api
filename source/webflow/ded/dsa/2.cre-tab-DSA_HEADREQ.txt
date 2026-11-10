@@ -1,0 +1,12 @@
+create table DSA_HEADREQ
+(
+	nFrmno 		number(3),
+	vOrgNo		varchar2(6),
+	cYear		char(2),
+	cYear2		char(4),
+	nRunNo		number(6),
+	itemno		varchar2(3),
+	snno		char(4),
+	PRIMARY KEY(nFrmno,vorgno,cYear,cYear2,nrunno),
+	foreign key (nFrmNo, vOrgNo, cYear, cYear2, nRunNo) references form(nFrmNo, vOrgNo, cYear, cYear2, nRunNo)
+);

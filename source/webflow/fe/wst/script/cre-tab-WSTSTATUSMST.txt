@@ -1,0 +1,6 @@
+create table WSTSTATUSMST
+(
+	REQSTSNO	char(1),
+	REQSTATUS varchar2(400),
+	primary key (REQSTSNO)
+);

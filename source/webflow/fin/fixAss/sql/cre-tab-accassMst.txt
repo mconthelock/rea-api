@@ -1,0 +1,7 @@
+create table fxa_accassMst (
+	accassCode	varchar2(10),
+	accassName	varchar2(256),
+	vOwner		varchar2(12),
+	primary key (accassCode)	
+);
+

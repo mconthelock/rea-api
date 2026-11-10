@@ -1,0 +1,2 @@
+insert into WSTPURPOSEMST values('1','Disposal/ส่งกำจัด');
+insert into WSTPURPOSEMST values('2','Treatment (Reuse at AMEC)/ส่งบำบัด');

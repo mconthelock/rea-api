@@ -1,0 +1,5 @@
+insert into fxa_causewriteoff(writeoffno,writeoffdesc) values('1','SALE');
+insert into fxa_causewriteoff(writeoffno,writeoffdesc) values('2','DONATE');
+insert into fxa_causewriteoff(writeoffno,writeoffdesc) values('3','LOSS');
+insert into fxa_causewriteoff(writeoffno,writeoffdesc) values('4','DAMAGE');
+insert into fxa_causewriteoff(writeoffno,writeoffdesc) values('5','OTHERS CAUSE');

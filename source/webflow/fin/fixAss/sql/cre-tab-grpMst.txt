@@ -1,0 +1,6 @@
+create table fxa_grpMst (
+	grpCode		varchar2(5),
+	grpdesc		varchar2(256),
+	primary key (grpCode)	
+);
+
