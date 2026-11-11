@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>MITSUBISHI ELEVATOR ASIA CO.,LTD.[Procurement WorkFlow System]</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function Form_Load(){
+	document.frmLogon.sUsername.focus();
+}
+function sUsername_Focus(){
+	document.frmLogon.sUsername.select();
+}
+
+function sUsername_KeyPress(){
+	if (event.keyCode == 13){
+		document.frmLogon.sPassword.focus();
+		event.returnValue = false;
+	}
+}
+
+function sPassword_Focus(){
+	document.frmLogon.sPassword.select();
+}
+
+-->
+</SCRIPT>
+</head>
+
+<body bgcolor="#2F3F84" link="#FF3333" vlink="#FF0000" alink="#FFFFFF" onLoad="Form_Load()">
+<div align="center">
+  <table width="400" border="0" cellspacing="0" cellpadding="0">
+    <tr align="center"> 
+      <td><img src="images/picmain2.jpg" width="400" height="302"></td>
+    </tr>
+  </table>
+  <table width="400" border="0" cellspacing="1" cellpadding="0">
+    <tr align="center"> 
+      <td> 
+        <form method="post" action="./security/login.asp" name="frmLogon">
+          <table width="400" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="178" align="right">&nbsp;</td>
+              <td width="178" align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#66CCFF"><b>User 
+                ID :</b></font></td>
+              <td width="222"> 
+                <input type="text" name="sUsername" size="12" maxlength="12" onFocus="sUsername_Focus()" onKeyPress="sUsername_KeyPress()">
+              </td>
+              <td width="222">&nbsp; </td>
+            </tr>
+            <tr>
+              <td width="178" align="right">&nbsp;</td>
+              <td width="178" align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#66CCFF"><b>Password 
+                :</b></font></td>
+              <td width="222"> 
+                <input type="password" name="sPassword" size="12" maxlength="12">
+              </td>
+              <td width="222">&nbsp; </td>
+            </tr>
+            <tr>
+              <td width="178">&nbsp;</td>
+              <td width="178">&nbsp;</td>
+              <td width="222" align="center"> 
+                <input type="submit" name="Submit" value="Login">
+              </td>
+              <td width="222" align="center">&nbsp; </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr align="center" valign="top"> 
+      <td><font face="Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="-2" color="#66CCFF"> 
+        </font><font face="Time New Roman">
+		<font size=+1 color="yellow"><b><i>
+		"It is not the strongest of the species that survives,&nbsp;<br>
+		Not the most intelligent, But the one most responsive to change."</b></i>	
+</font></font><font color="#66CCFF"><br>
+        </font></font><font size="1" color="#66CCFF"> 
+</font></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

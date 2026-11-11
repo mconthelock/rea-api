@@ -1,0 +1,38 @@
+body {font-family: "MS Sans Serif"; font-size: 10pt}
+p {font-family: "MS Sans Serif"; font-size: 9pt}
+th {font-family: "MS Sans Serif"; font-size:10pt; text-align:left}
+td {font-family: "MS Sans Serif"; font-size:10pt}
+input {font-family: "MS Sans Serif"; font-size:10pt}
+textarea {font-family: "MS Sans Serif"; font-size:10pt}
+
+A:Visited	{color: #6600CC; text-decoration: underline}
+A:Active 	{color: #0033CC; text-decoration: none}
+A:Hover		{color: #CC0000; text-decoration: none}
+
+A.header			{text-decoration : none; font-family:"MS Sans Serif"; color: #0066CC; font-weight: normal}
+A.header:Visited		{color: #0066CC; text-decoration: none}
+A.header:Active 		{color: #C00010}
+A.header:Hover			{color: #C00010; text-decoration: underline}
+
+A.lnkmn {color:#FFFFFF;text-decoration:none;
+font-family: "MS Sans Serif";; font-size: 9pt}
+A.lnkmn:visited{color:#ffffff}
+A.lnkmn:hover{color:#ffcc33; background-color: #0066FF}
+A.lnkmn:link{color:#ffffff}
+A.lnkmn:active{color:#ffffff}
+
+.areatitle {font-weight: bold; font-size: 12pt}
+.info {font-size:9pt; font-family: "MS Sans Serif"; background-color: #FFFFFF}
+.gray-info {font-size:8pt; font-family: "MS Sans Serif"; background-color: rgb(242,242,242)}
+.white-info {font-size:8pt; font-family: "MS Sans Serif"; background-color: #FFFFFF}
+.gray-lite{background-color: rgb(242,242,242)}
+.white-lite{background-color: #FFFFFF}
+.highlight{background-color: #F2F2F2}
+.tbrhdata { font-family: "MS Sans Serif"; font-size: 10pt; font-weight: bold}
+.tbrdata { background-color: #0062C4; color: #FFFFFF}
+.tbrtitle { background-color: #336699; font-family: "MS Sans Serif", Arial, sans-serif; font-size: 12pt; color: #FFFFFF }
+.tbrbdata { background-color: #CCCCCC; font-family: "MS Sans Serif", Arial, sans-serif; font-size: 9pt}
+.heading {  font-family: "MS Sans Serif"; font-size: 18pt; color: #FFFFFF}
+.barlink {  font-family: "MS Sans Serif"; font-size: 14pt; font-weight: bold; color: #FFFFFF}.active {  text-decoration: none; background-color: #FFB030; color: #D00000}
+.corp {  font-size: 14pt; font-weight: bold}
+.non {  font-family: "Microsoft Sans Serif"; font-size: 10pt; font-weight: normal; color: #fffdfb}
